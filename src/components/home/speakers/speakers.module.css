@@ -1,0 +1,65 @@
+.wrapper {
+  margin-top: 36px;
+}
+
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+
+.card {
+  border-radius: 16px;
+  padding: 16px;
+  padding-top: 64px;
+  margin-top: 96px;
+  position: relative;
+  color: var(--featured-speaker-card-foreground);
+  background: var(--color-primary-gradient);
+}
+
+.content {
+  color: inherit;
+}
+
+.name {
+  font-size: 2rem;
+  line-height: 2.75rem;
+  font-weight: 700;
+}
+
+.surname {
+  margin-top: 16px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.875rem;
+}
+
+.img {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 165px;
+  height: 165px;
+  border: 8px solid var(--color-background);
+  border-radius: 50%;
+  background: var(--color-primary-gradient);
+}
+
+@media screen and (max-width: 846px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+}

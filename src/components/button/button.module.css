@@ -1,0 +1,14 @@
+.outlined {
+  padding: 12px 20px;
+  border-radius: 8px;
+
+  border: 2px solid var(--color-dotnet-outline-btn-accent-foreground);
+  color: var(--color-dotnet-link-btn-neutral-foreground);
+  background-color: transparent;
+}
+
+.outlined:hover {
+  color: var(--color-dotnet-outline-btn-accent-foreground-hover);
+  background-color: var(--color-dotnet-outline-btn-accent-background-hover);
+  cursor: pointer;
+}
