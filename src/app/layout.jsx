@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} ${spaceGrotesk.variable}`}>
         <div className="wrapper">
           <Image
+            rel="presentation"
             className="bg-ellipse bg-ellipse-1"
             src="/ellipses/ellipse-1.svg"
             alt="Background gradient ellipse"
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
             height={2336}
           />
           <Image
+            rel="presentation"
             className="bg-ellipse bg-ellipse-2"
             src="/ellipses/ellipse-2.svg"
             alt="Background gradient ellipse"
@@ -37,6 +39,7 @@ export default function RootLayout({ children }) {
             height={1501}
           />
           <Image
+            rel="presentation"
             className="bg-ellipse bg-ellipse-3"
             src="/ellipses/ellipse-3.svg"
             alt="Background gradient ellipse"
@@ -44,6 +47,7 @@ export default function RootLayout({ children }) {
             height={1462}
           />
           <Image
+            rel="presentation"
             className="bg-ellipse bg-ellipse-4"
             src="/ellipses/ellipse-4.svg"
             alt="Background gradient ellipse"
@@ -51,6 +55,7 @@ export default function RootLayout({ children }) {
             height={1232}
           />
           <Image
+            rel="presentation"
             className="bg-ellipse bg-ellipse-5"
             src="/ellipses/ellipse-5.svg"
             alt="Background gradient ellipse"
@@ -59,7 +64,7 @@ export default function RootLayout({ children }) {
           />
           <div className="container">
             <Header />
-            {children}
+            <main className="main">{children}</main>
             <Footer />
           </div>
         </div>

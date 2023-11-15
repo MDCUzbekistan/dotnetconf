@@ -1,0 +1,12 @@
+.wrapper {
+  color: var(--color-foreground);
+}
+
+.link {
+  color: var(--color-link-foreground);
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: var(--color-link-foreground-hover);
+}
