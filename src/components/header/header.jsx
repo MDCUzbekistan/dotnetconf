@@ -16,21 +16,23 @@ function Header() {
           .NET Conf 2023
         </a>
       </Gradient>
-      {(window.innerWidth > 1250 || isMenuOpen) && (
-        <nav className={styles.nav}>
-          <ul className={styles.list}>
-            {links.map((link) => {
-              return (
-                <li className={styles.item} key={link.id}>
-                  <Link className={styles.link} href={link.slug}>
-                    {link.title}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
-      )}
+      <nav
+        className={`${styles.nav} ${
+          isMenuOpen ? styles.navOpened : styles.navClosed
+        }`}
+      >
+        <ul className={styles.list}>
+          {links.map((link) => {
+            return (
+              <li className={styles.item} key={link.id}>
+                <Link className={styles.link} href={link.slug}>
+                  {link.title}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
       <Menu
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         className={styles.burger}

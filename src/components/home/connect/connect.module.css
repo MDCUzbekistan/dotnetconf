@@ -1,0 +1,49 @@
+.wrapper {
+  margin: 60px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  color: var(--color-foreground);
+}
+
+.connectLink {
+  color: var(--color-link-foreground);
+  text-decoration: underline;
+}
+
+.connectLink:hover {
+  color: var(--color-link-foreground-hover);
+}
+
+.followText {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.followLink {
+  position: relative;
+}
+
+.followLink:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 6px;
+  width: 100%;
+  border-radius: 4px;
+  background: var(--color-primary-gradient);
+}
+
+@media screen and (max-width: 548px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .followText {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+}

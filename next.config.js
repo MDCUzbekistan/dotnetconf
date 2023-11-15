@@ -5,6 +5,9 @@ const nextConfig = {
       {
         hostname: "cache.sessionize.com",
       },
+      {
+        hostname: "dotnetconf.com",
+      },
     ],
   },
 };

@@ -780,11 +780,16 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
+
+  overflow-x: hidden;
 }
 
 .wrapper {
   min-height: 100vh;
+  width: 100%;
   overflow: hidden;
+
+  position: relative;
 }
 
 .container {
@@ -792,4 +797,51 @@ body {
   width: 100%;
   padding: 0 40px;
   margin: 0 auto;
+}
+
+.bg-ellipse {
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.bg-ellipse-1 {
+  left: -50%;
+  top: -20%;
+  transform: rotate(20deg);
+}
+
+.bg-ellipse-2 {
+  left: 40%;
+  top: -5%;
+  transform: rotate(33deg);
+}
+
+.bg-ellipse-3 {
+  left: -25%;
+  top: 30%;
+}
+
+.bg-ellipse-4 {
+  left: -5%;
+  top: 55%;
+  transform: rotate(33deg);
+}
+
+.bg-ellipse-4 {
+  left: 30%;
+  top: 80%;
+}
+
+@media screen and (max-width: 1248px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 548px) {
+  .container {
+    padding: 0 20px;
+  }
 }

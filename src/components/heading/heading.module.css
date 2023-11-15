@@ -1,5 +1,6 @@
 .heading {
   color: var(--color-title-font);
+  font-family: var(--font-space-grotesk);
 }
 
 .h1 {
@@ -43,5 +44,10 @@
   .h2 {
     font-size: 1.625rem;
     line-height: 2.4rem;
+  }
+
+  .h4 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
   }
 }
