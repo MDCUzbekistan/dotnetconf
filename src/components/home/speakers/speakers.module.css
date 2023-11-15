@@ -54,6 +54,8 @@
   border: 8px solid var(--color-background);
   border-radius: 50%;
   background: var(--color-primary-gradient);
+
+  object-fit: cover;
 }
 
 @media screen and (max-width: 846px) {

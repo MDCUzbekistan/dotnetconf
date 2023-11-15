@@ -11,14 +11,17 @@ function Connect() {
           Stay connected
         </Heading>
         <p className={styles.connectText}>
-          <a href="https://instagram.com" className={styles.connectLink}>
+          <a
+            href="https://www.instagram.com/mdc_uz/"
+            className={styles.connectLink}
+          >
             Follow
-          </a>{" "}
+          </a>
           for the latest news and updates about .NET Conf.
         </p>
       </div>
       <p className={styles.followText}>
-        Follow the event{" "}
+        Follow the event
         <Gradient gradientVariant="primary">
           <a
             className={styles.followLink}

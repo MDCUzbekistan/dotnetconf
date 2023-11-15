@@ -21,12 +21,13 @@ function Hero() {
           </Gradient>
         </p>
         <div className={styles.buttons}>
+          <Button variant="outlined">Add to calendar</Button>
           <Button variant="outlined" asChild={true}>
             <Link
               target="_blank"
               href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAUFd-8RUMFRXUVpaSjNITkFHUVBOT0FLRDA1MVc2MC4u"
             >
-              Subscribe for updates
+              Register
             </Link>
           </Button>
         </div>

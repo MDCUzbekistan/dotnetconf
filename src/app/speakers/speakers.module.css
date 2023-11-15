@@ -30,6 +30,7 @@
   margin: 0 auto 16px auto;
   border-radius: 50%;
   background: var(--color-primary-gradient);
+  object-fit: cover;
 }
 
 .cardName {
