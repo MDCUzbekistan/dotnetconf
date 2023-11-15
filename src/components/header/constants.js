@@ -14,9 +14,4 @@ export const links = [
     title: "Agenda",
     slug: "agenda",
   },
-  {
-    id: 4,
-    title: "Local events",
-    slug: "local-events",
-  },
 ];

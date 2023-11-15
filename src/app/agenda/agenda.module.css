@@ -1,0 +1,105 @@
+.title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.agendaHeader {
+  margin-bottom: 36px;
+}
+
+.sessionTime {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  color: var(--color-title-font);
+
+  font-family: var(--font-space-grotesk);
+}
+
+.agendaSubtitle {
+  font-size: 2rem;
+  font-family: var(--font-space-grotesk);
+  font-weight: 700;
+  line-height: 2.75rem;
+  color: var(--color-title-font);
+}
+
+.session {
+  display: grid;
+  grid-template-columns: 0.3fr 8px 1fr;
+  gap: 48px;
+}
+
+.sessionContent {
+  padding-left: 32px;
+  width: 80%;
+}
+
+.session:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.sessionTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  color: var(--color-title-font);
+  font-family: var(--font-space-grotesk);
+
+  padding: 24px 0;
+}
+
+.sessionGradientLine {
+  width: 8px;
+  height: 100%;
+  border-radius: var(--corner-radius-xs);
+  background: var(--color-primary-gradient);
+}
+
+.sessionTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  color: var(--color-title-font);
+}
+
+.sessionSpeakers {
+  color: var(--color-agenda-speaker);
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.sessionDescription {
+  font-size: 1.125rem;
+  line-height: 1.7rem;
+  font-weight: 600;
+  color: var(--color-title-font);
+}
+
+@media screen and (max-width: 1248px) {
+  .sessionTime {
+    font-size: 1.625rem;
+    line-height: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .sessionTime {
+    font-size: 1.625rem;
+    line-height: 2.4rem;
+  }
+
+  .session {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .sessionContent {
+    padding: 0;
+  }
+
+  .sessionGradientLine {
+    width: 100%;
+    height: 4px;
+  }
+}
