@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer/footer";
 import Image from "next/image";
+import "add-to-calendar-button";
 
 const inter = Open_Sans({ subsets: ["latin"] });
 const spaceGrotesk = Space_Grotesk({

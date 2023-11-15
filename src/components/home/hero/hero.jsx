@@ -22,8 +22,13 @@ function Hero() {
           </Gradient>
         </p>
         <div className={styles.buttons}>
-          <Button className={styles.btn} variant="outlined">
-            Add to calendar
+          <Button asChild={true} className={styles.btn} variant="outlined">
+            <Link
+              target="_blank"
+              href="https://www.linkedin.com/company/mdc-uzbekistan/"
+            >
+              Follow us
+            </Link>
           </Button>
           <Button className={styles.btn} variant="outlined" asChild={true}>
             <Link

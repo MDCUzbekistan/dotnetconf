@@ -281,6 +281,11 @@ export const headerLinks = [
     title: "Agenda",
     slug: "agenda",
   },
+  {
+    id: 4,
+    title: "Organizers",
+    slug: "organizers",
+  },
 ];
 
 export const footerLinks = [
@@ -369,5 +374,88 @@ export const sponsors = [
     imgWidth: 256,
     imgHeight: 124,
     link: "https://microsoft.com",
+  },
+];
+
+export const organizers = [
+  {
+    id: 1,
+    name: "Mukhammadkarim",
+    surname: "Tukhtaboev",
+    img: "/images/core-team/mukhammadkarim.jpg",
+    url: "https://www.linkedin.com/in/mukhammadkarim-tukhtaboev/",
+    username: "mukhammadkarim-tukhtaboev",
+  },
+  {
+    id: 2,
+    name: "Khondamir",
+    surname: "Abdukhoshimov",
+    img: "/images/core-team/xondamir.jpg",
+    url: "https://www.linkedin.com/in/khondamir-abdukhoshimov/",
+    username: "khondamir-abdukhoshimov",
+  },
+  {
+    id: 3,
+    name: "Aziza",
+    surname: "Abdurakhmonova",
+    img: "/images/core-team/aziza.jpg",
+    url: "https://www.linkedin.com/in/aziza-abdurakhmonova-721844192/",
+    username: "aziza-abdurakhmonova",
+  },
+  {
+    id: 4,
+    name: "Voriskhon",
+    surname: "Ganikhujaev",
+    img: "/images/core-team/voriskhon.jpg",
+    url: "https://www.linkedin.com/in/voriskhon-ganikhujaev/",
+    username: "voriskhon-ganikhujaev",
+  },
+  {
+    id: 5,
+    name: "Elbek",
+    surname: "Normurodov",
+    img: "/images/core-team/elbek.jpg",
+    url: "https://www.linkedin.com/in/elbekdeveloper/",
+    username: "elbekdeveloper",
+  },
+  {
+    id: 6,
+    name: "Ozodakhon",
+    surname: "Muminova",
+    img: "/images/core-team/ozoda.jpg",
+    url: "https://www.linkedin.com/in/ozodakhon/",
+    username: "ozodakhon",
+  },
+  {
+    id: 7,
+    name: "Mokhira",
+    surname: "Kodirova",
+    img: "/images/core-team/mokhira.jpg",
+    url: "https://www.linkedin.com/in/mokhira-kodirova-834789255/",
+    username: "mokhira-kodirova",
+  },
+  {
+    id: 8,
+    name: "Abbos",
+    surname: "Haydarov",
+    img: "/images/core-team/abbos.jpg",
+    url: "https://www.linkedin.com/in/abbos-haydarov-a93972250/",
+    username: "abbos-haydarov",
+  },
+  {
+    id: 9,
+    name: "Temirxon",
+    surname: "Shodiyev",
+    img: "/images/core-team/temir.jpg",
+    url: "https://www.linkedin.com/in/temurxon-shodiyev/",
+    username: "temurxon-shodiyev",
+  },
+  {
+    id: 10,
+    name: "Bekhzodkhon",
+    surname: "Makhkamov",
+    img: "/images/core-team/bekhzodkhon.jpg",
+    url: "https://www.linkedin.com/in/bekhzodkhon-makhkamov-514791b2/",
+    username: "bekhzodkhon-makhkamov",
   },
 ];
