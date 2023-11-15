@@ -30,7 +30,8 @@ const Page = () => {
               </Gradient>
               <p className={styles.cardBio}>{item.bio}</p>
               <a className={styles.cardLink} href={item.url} target="_blank">
-                @{item.username} <ArrowRight size={16} />
+                @{item.username}{" "}
+                <ArrowRight className={styles.arrow} size={16} />
               </a>
             </article>
           );
