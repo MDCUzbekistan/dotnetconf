@@ -13,7 +13,7 @@ function Header() {
     <header className={styles.wrapper}>
       <Gradient>
         <a className={styles.logo} href="/">
-          .NET Conf 2023
+          MDC Uzbekistan
         </a>
       </Gradient>
       <nav

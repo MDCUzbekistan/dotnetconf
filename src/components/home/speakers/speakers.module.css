@@ -31,6 +31,8 @@
   font-size: 2rem;
   line-height: 2.75rem;
   font-weight: 700;
+
+  color: var(--color-title-font);
 }
 
 .surname {
@@ -38,6 +40,8 @@
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.875rem;
+
+  color: var(--color-title-font);
 }
 
 .img {

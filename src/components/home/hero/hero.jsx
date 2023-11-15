@@ -4,6 +4,7 @@ import Gradient from "@/components/gradient/gradient";
 import Button from "@/components/button";
 import Image from "next/image";
 import Heading from "@/components/heading";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -13,15 +14,21 @@ function Hero() {
           Microsoft Ignite 2023 Uzbekistan
         </Heading>
         <p className={`gradient ${styles.subtitle}`}>
-          First Offline Microsoft Conference in Uzbekistan
+          First In-Person Microsoft Conference <br /> in Uzbekistan
           <br />
           <Gradient>
-            <span className={styles.date}>December 2</span>
+            <span className={styles.date}>2nd December</span>
           </Gradient>
         </p>
         <div className={styles.buttons}>
-          <Button variant="outlined">Add to calendar</Button>
-          <Button variant="outlined">Subscribe for updates</Button>
+          <Button variant="outlined" asChild={true}>
+            <Link
+              target="_blank"
+              href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAUFd-8RUMFRXUVpaSjNITkFHUVBOT0FLRDA1MVc2MC4u"
+            >
+              Subscribe for updates
+            </Link>
+          </Button>
         </div>
       </div>
       <Image
@@ -29,7 +36,7 @@ function Hero() {
         src="/images/hero-graphic.png"
         width={1162}
         height={650}
-        alt="123"
+        alt="hero graphic"
       />
     </section>
   );

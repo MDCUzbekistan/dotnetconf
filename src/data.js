@@ -356,6 +356,16 @@ export const speakers = [
     url: "https://www.linkedin.com/in/izzatkhon",
     username: "izzatkhon",
   },
+  {
+    id: 10,
+    name: "Izzat",
+    surname: "Sh",
+    img: "/images/speakers/izzat-sh.jpg",
+    position: "Lead .NET Engineer at EPAM Systems",
+    isFeatured: false,
+    url: "https://www.linkedin.com/in/izzatkhon",
+    username: "izzatkhon",
+  },
 ];
 
 export const swags = [
@@ -464,6 +474,15 @@ export const schedule = [
 
 export const sponsors = [
   {
+    id: 3,
+    title: "Microsoft",
+    lightImg: "/images/sponsors/microsoft.svg",
+    darkImg: "/images/sponsors/microsoft.svg",
+    imgWidth: 236,
+    imgHeight: 104,
+    link: "https://microsoft.com",
+  },
+  {
     id: 1,
     title: "Digital Generation Uzbekistan",
     lightImg: "/images/sponsors/dg.svg",
@@ -476,7 +495,7 @@ export const sponsors = [
     id: 2,
     title: "Microsoft developers community in Uzbekistan",
     lightImg: "/images/sponsors/mdcu.svg",
-    darkImg: "/images/sponsors/mdcu.svg",
+    darkImg: "/images/sponsors/mdcu-black.svg",
     imgWidth: 256,
     imgHeight: 124,
     link: "https://microsoft.com",
