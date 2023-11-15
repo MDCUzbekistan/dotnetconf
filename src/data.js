@@ -209,7 +209,7 @@ export const speakers = [
   },
   {
     id: 9,
-    name: "Izzat",
+    name: "Izzatkhon",
     surname: "Shamsiev",
     img: "/images/speakers/izzat-sh.jpg",
     position: "Lead .NET Engineer at EPAM Systems",

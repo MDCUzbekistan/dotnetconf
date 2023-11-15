@@ -16,7 +16,7 @@ function Connect() {
             className={styles.connectLink}
           >
             Follow
-          </a>
+          </a>{" "}
           for the latest news and updates about .NET Conf.
         </p>
       </div>

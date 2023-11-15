@@ -5,6 +5,7 @@ import Button from "@/components/button";
 import Image from "next/image";
 import Heading from "@/components/heading";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 function Hero() {
   return (
@@ -17,17 +18,20 @@ function Hero() {
           First In-Person Microsoft Conference <br /> in Uzbekistan
           <br />
           <Gradient>
-            <span className={styles.date}>2nd December</span>
+            <span className={styles.date}>December 2</span>
           </Gradient>
         </p>
         <div className={styles.buttons}>
-          <Button variant="outlined">Add to calendar</Button>
-          <Button variant="outlined" asChild={true}>
+          <Button className={styles.btn} variant="outlined">
+            Add to calendar
+          </Button>
+          <Button className={styles.btn} variant="outlined" asChild={true}>
             <Link
               target="_blank"
               href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAUFd-8RUMFRXUVpaSjNITkFHUVBOT0FLRDA1MVc2MC4u"
             >
               Register
+              <ArrowRight className={styles.arrow} />
             </Link>
           </Button>
         </div>
