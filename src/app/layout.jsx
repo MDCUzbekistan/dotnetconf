@@ -2,7 +2,7 @@ import { Open_Sans, Space_Grotesk } from "next/font/google";
 import "./reset.css";
 import "./globals.css";
 import Header from "@/components/header";
-import Footer from "@/components/home/footer/footer";
+import Footer from "@/components/footer/footer";
 import Image from "next/image";
 
 const inter = Open_Sans({ subsets: ["latin"] });
@@ -12,9 +12,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
-  title: ".NET Conf 2023",
+  title: "Microsoft Ignite 2023 Uzbekistan",
   description:
-    "Join the .NET Conf 2023 free event in November to learn about the newest developments across the .NET platform, open source, and dev tools. Mark your calendar!",
+    "Join the Microsoft Ignite 2023 Uzbekistan free event in December 2 to learn about the newest developments across the .NET platform, open source, and dev tools. Mark your calendar!",
 };
 
 export default function RootLayout({ children }) {

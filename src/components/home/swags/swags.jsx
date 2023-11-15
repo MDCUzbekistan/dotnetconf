@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./swags.module.css";
 import Heading from "@/components/heading";
-import { swags } from "./constants";
-import { ArrowRight } from "lucide-react";
+import { swags } from "@/data";
 
 function Swags() {
   return (
@@ -22,10 +21,6 @@ function Swags() {
             <article key={item.id}>
               <p className={styles.cardTitle}>{item.title}</p>
               <p className={styles.cardDescription}>{item.description}</p>
-              <a className={styles.link} href={item.linkUrl} target="_blank">
-                {item.linkTitle}{" "}
-                <ArrowRight className={styles.arrow} size={20} />{" "}
-              </a>
             </article>
           );
         })}

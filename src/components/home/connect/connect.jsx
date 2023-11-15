@@ -11,8 +11,8 @@ function Connect() {
           Stay connected
         </Heading>
         <p className={styles.connectText}>
-          <a href="http://eepurl.com/gvEhgX" className={styles.connectLink}>
-            Sign up
+          <a href="https://instagram.com" className={styles.connectLink}>
+            Follow
           </a>{" "}
           for the latest news and updates about .NET Conf.
         </p>

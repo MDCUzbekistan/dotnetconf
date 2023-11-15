@@ -29,20 +29,8 @@
   margin-bottom: 16px;
 }
 
-.link {
-  color: inherit;
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  gap: 3px;
-}
-
 .arrow {
   transition: transform 0.2s ease-in-out;
-}
-
-.link:hover .arrow {
-  transform: translateX(4px);
 }
 
 @media (prefers-color-scheme: light) {

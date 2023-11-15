@@ -10,12 +10,13 @@ function Hero() {
     <section className={styles.wrapper}>
       <div className={styles.content}>
         <Heading level={1} className={styles.title}>
-          .NET Conf 2023
+          Microsoft Ignite 2023 Uzbekistan
         </Heading>
         <p className={`gradient ${styles.subtitle}`}>
-          The largest .NET event hosted online <br />
+          First Offline Microsoft Conference in Uzbekistan
+          <br />
           <Gradient>
-            <span className={styles.date}>November 14 - 16.</span>
+            <span className={styles.date}>December 2</span>
           </Gradient>
         </p>
         <div className={styles.buttons}>

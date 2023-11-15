@@ -4,7 +4,6 @@
 }
 
 .title {
-  margin-left: -15px;
   margin-bottom: 24px;
 }
 
@@ -13,6 +12,10 @@
   font-size: 28px;
   line-height: 42px;
   color: var(--color-title-font);
+}
+
+.content {
+  width: 50%;
 }
 
 .buttons {
@@ -33,6 +36,10 @@
   .img {
     display: none;
   }
+
+  .content {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 539px) {
@@ -41,7 +48,6 @@
   }
 
   .title {
-    margin-left: 0;
     margin-bottom: 8px;
   }
 

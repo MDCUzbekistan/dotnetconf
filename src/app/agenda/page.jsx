@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./agenda.module.css";
 import Heading from "@/components/heading";
-import { agenda } from "./constants";
 import Gradient from "@/components/gradient";
+import { agenda } from "@/data";
 
 const Page = () => {
   return (

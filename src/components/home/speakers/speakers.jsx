@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./speakers.module.css";
 import Heading from "@/components/heading";
-import { speakers } from "./constants";
 import Image from "next/image";
+import { speakers } from "@/data";
 
 function Speakers() {
   return (
@@ -12,6 +12,10 @@ function Speakers() {
       </Heading>
       <ul className={styles.list}>
         {speakers.map((speaker) => {
+          if (!speaker.isFeatured) {
+            return null;
+          }
+
           return (
             <section key={speaker.id} className={styles.card}>
               <div className={styles.content}>

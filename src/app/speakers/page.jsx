@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./speakers.module.css";
-import { speakers } from "./constants";
 import Heading from "@/components/heading";
 import Image from "next/image";
 import Gradient from "@/components/gradient";
 import { ArrowRight } from "lucide-react";
+import { speakers } from "@/data";
 
 const Page = () => {
   return (
@@ -30,7 +30,7 @@ const Page = () => {
               </Gradient>
               <p className={styles.cardBio}>{item.bio}</p>
               <a className={styles.cardLink} href={item.url} target="_blank">
-                {item.username} <ArrowRight size={16} />
+                @{item.username} <ArrowRight size={16} />
               </a>
             </article>
           );

@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./sponsors.module.css";
 import Heading from "@/components/heading";
-import { sponsors } from "./constants";
 import Image from "next/image";
+import { sponsors } from "@/data";
 
 function Sponsors() {
   return (

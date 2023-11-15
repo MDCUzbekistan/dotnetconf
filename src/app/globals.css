@@ -844,6 +844,16 @@ body {
   top: 80%;
 }
 
+.not-found {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+
+  padding: 96px 0;
+}
+
 @media screen and (max-width: 1248px) {
   .container {
     padding: 0 30px;

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./schedule.module.css";
 import Heading from "@/components/heading";
-import { schedule } from "./constants";
+import { schedule } from "@/data";
 
 function Schedule() {
   return (

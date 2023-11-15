@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./features.module.css";
-import { features } from "./constants";
 import Heading from "@/components/heading";
+import { features } from "@/data";
 
 function Features() {
   return (
