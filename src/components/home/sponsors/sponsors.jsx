@@ -8,7 +8,7 @@ function Sponsors() {
   return (
     <section className={styles.wrapper}>
       <Heading className={styles.title} level={2}>
-        Our sponsors
+        Our partners
       </Heading>
       <div className={styles.list}>
         {sponsors.map((item) => {

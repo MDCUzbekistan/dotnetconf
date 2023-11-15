@@ -10,8 +10,8 @@ export const agenda = [
         timeTo: "10:00",
         title: "Registration",
         description:
-          ".NET 8 is here! Find out what is new for .NET developers across all workloads including cloud, mobile, desktop, web, AI, IoT, and so much more.",
-        speakers: ["Damian"],
+          "The formal arrangement made by individuals to secure their place at our conference, ensuring that they have access to the full range of conference offerings.",
+        speakers: [],
       },
       {
         id: 2,
@@ -19,8 +19,8 @@ export const agenda = [
         timeTo: "10:20",
         title: "Opening speech",
         description:
-          ".NET 8 is here! Find out what is new for .NET developers across all workloads including cloud, mobile, desktop, web, AI, IoT, and so much more.",
-        speakers: ["Damian"],
+          "This event is your gateway to unlocking the full potential of Microsoft technologies, fostering collaboration, and driving innovation. Get ready for a transformative experience that will empower you to lead in the ever-evolving world of technology.",
+        speakers: [],
       },
       {
         id: 3,
@@ -28,8 +28,8 @@ export const agenda = [
         timeTo: "10:40",
         title: "Promotion and Growth",
         description:
-          ".NET 8 is here! Find out what is new for .NET developers across all workloads including cloud, mobile, desktop, web, AI, IoT, and so much more.",
-        speakers: ["Damian"],
+          "We'll delve into strategies to propel your career and organizations forward through the adoption of Microsoft solutions. With a focus on promotion and growth, we aim to empower you to embrace innovation and thrive in the digital age",
+        speakers: ["Martin Tatar"],
       },
       {
         id: 4,
@@ -37,8 +37,8 @@ export const agenda = [
         timeTo: "11:00",
         title: "From Lines of Code to Leading Teams",
         description:
-          ".NET 8 is here! Find out what is new for .NET developers across all workloads including cloud, mobile, desktop, web, AI, IoT, and so much more.",
-        speakers: ["Damian"],
+          "This encapsulates the journey we'll explore at our conference. We'll delve into not just the technical aspects but also the leadership and teamwork skills needed to excel in the dynamic world of technology. Join us as we navigate this transformative path together, from mastering code to becoming leaders in our field.",
+        speakers: ["Djakhongir Makhkamov"],
       },
       {
         id: 5,
@@ -46,8 +46,8 @@ export const agenda = [
         timeTo: "11:20",
         title: "Open Source Models in Enterprise Environments",
         description:
-          ".NET 8 is here! Find out what is new for .NET developers across all workloads including cloud, mobile, desktop, web, AI, IoT, and so much more.",
-        speakers: ["Damian"],
+          "It will be a central theme at our conference. We will delve into the dynamic landscape of open-source technologies and their integration within enterprise settings. Join us to explore innovative strategies and success stories that showcase the power of open-source solutions in driving enterprise growth and innovation",
+        speakers: ["Hassan Habib"],
       },
       {
         id: 6,
@@ -55,8 +55,8 @@ export const agenda = [
         timeTo: "11:40",
         title: "Social Engineering and Cybersecurity Awareness",
         description:
-          ".NET 8 is here! Find out what is new for .NET developers across all workloads including cloud, mobile, desktop, web, AI, IoT, and so much more.",
-        speakers: ["Damian"],
+          "Critical topic, we'll address at our conference. We'll equip you with the knowledge and tools to defend against social engineering attacks while fostering a culture of cybersecurity awareness. Join us to learn how to safeguard your digital presence and protect your organization from evolving security threats.",
+        speakers: ["Saud Abdulwahed"],
       },
       {
         id: 7,
@@ -64,8 +64,8 @@ export const agenda = [
         timeTo: "12:00",
         title: "The Evolution of AI in the Cloud Ecosystem",
         description:
-          ".NET 8 is here! Find out what is new for .NET developers across all workloads including cloud, mobile, desktop, web, AI, IoT, and so much more.",
-        speakers: ["Damian"],
+          "Focal point of discussion at our conference, We'll delve into the remarkable journey of artificial intelligence within cloud environments, exploring its impact on industries and innovation. Join us to witness the latest advancements, applications, and strategies that are shaping the future of AI in the cloud ecosystem.",
+        speakers: ["Bobur Umurzokov"],
       },
       {
         id: 8,
@@ -73,8 +73,8 @@ export const agenda = [
         timeTo: "13:00",
         title: "Lunch break / Networking",
         description:
-          ".NET 8 is here! Find out what is new for .NET developers across all workloads including cloud, mobile, desktop, web, AI, IoT, and so much more.",
-        speakers: ["Damian"],
+          "Take the opportunity to refuel both your body and your professional network. Connect with fellow attendees, engage in meaningful conversations, and build lasting relationships in a relaxed and social setting. Enjoy your meal and make the most of this valuable networking time",
+        speakers: [""],
       },
       {
         id: 9,
@@ -82,8 +82,8 @@ export const agenda = [
         timeTo: "14:30",
         title: "Welcome to .NET 8",
         description:
-          ".NET 8 is here! Find out what is new for .NET developers across all workloads including cloud, mobile, desktop, web, AI, IoT, and so much more.",
-        speakers: ["Damian"],
+          "This marks the beginning of an exciting journey into the latest advancements and capabilities in the .NET ecosystem. Join us as we explore the innovations, enhancements, and opportunities that .NET 8 has to offer",
+        speakers: ["Nozim Turakulov"],
       },
       {
         id: 10,
@@ -91,8 +91,8 @@ export const agenda = [
         timeTo: "15:00",
         title: "Full stack web UI with Blazor in .NET 8",
         description:
-          ".NET 8 is here! Find out what is new for .NET developers across all workloads including cloud, mobile, desktop, web, AI, IoT, and so much more.",
-        speakers: ["Damian"],
+          "Captivating topic we'll delve into during our conference. Join us to uncover the power of Blazor in developing end-to-end web applications with .NET 8, embracing both the front-end and back-end aspects of web development. Don't miss this opportunity to explore the future of web UI ",
+        speakers: ["Izzatkhon Shamsiev"],
       },
       {
         id: 11,
@@ -101,8 +101,8 @@ export const agenda = [
         title:
           "Performance Improvements in .NET 8, ASP.NET Core, and .NET MAUI",
         description:
-          ".NET 8 is here! Find out what is new for .NET developers across all workloads including cloud, mobile, desktop, web, AI, IoT, and so much more.",
-        speakers: ["Damian"],
+          "It will be a spotlight topic at our conference. Join us to discover the substantial enhancements and optimizations in these key frameworks, and learn how they can elevate the speed and efficiency of your applications. Don't miss this chance to stay ahead of the curve in performance-driven development.",
+        speakers: ["Oybek Jumaniyozov"],
       },
       {
         id: 12,
@@ -110,8 +110,8 @@ export const agenda = [
         timeTo: "16:00",
         title: "What's New in C# 12",
         description:
-          ".NET 8 is here! Find out what is new for .NET developers across all workloads including cloud, mobile, desktop, web, AI, IoT, and so much more.",
-        speakers: ["Damian"],
+          "Highly anticipated session at our conference. Join us to explore the latest features, enhancements, and language innovations in C# 12, and stay at the forefront of modern programming capabilities. This session is your gateway to unlocking the full potential of the C# language.",
+        speakers: ["Doniyor Niyozov"],
       },
       {
         id: 13,
@@ -119,8 +119,17 @@ export const agenda = [
         timeTo: "16:30",
         title: "Building Cloud Native apps with .NET 8",
         description:
-          ".NET 8 is here! Find out what is new for .NET developers across all workloads including cloud, mobile, desktop, web, AI, IoT, and so much more.",
-        speakers: ["Damian"],
+          "Building Cloud-Native Apps with .NET 8 is a key focus of our conference. Join us to delve into the world of cloud-native development, harnessing the power of .NET 8 to create scalable, resilient, and highly available cloud applications. This session is your gateway to mastering the art of cloud-native architecture with .NET.",
+        speakers: ["Milan Jovanović"],
+      },
+      {
+        id: 14,
+        timeFrom: "16:30",
+        timeTo: "18:00",
+        title: "Closing Session",
+        description:
+          "We'll conclude our conference with gratitude and reflection. It's the time to recap key takeaways, express appreciation to our speakers and attendees, and look ahead to the future of technology and innovation. Thank you for being a part of this incredible journey, and let's close our conference on a high note.",
+        speakers: [],
       },
     ],
   },

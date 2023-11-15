@@ -21,7 +21,7 @@ function Connect() {
         </p>
       </div>
       <p className={styles.followText}>
-        Follow the event
+        Follow the event{" "}
         <Gradient gradientVariant="primary">
           <a
             className={styles.followLink}
