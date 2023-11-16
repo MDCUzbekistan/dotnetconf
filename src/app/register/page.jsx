@@ -17,97 +17,100 @@ const ROLES = [
   {
     id: 1,
     title: "Architect",
-    value: "architect",
+    value: "1",
   },
   {
     id: 2,
     title: "Data analyst",
-    value: "data-analyst",
+    value: "2",
   },
   {
     id: 3,
     title: "Data Engineer",
-    value: "data-engineer",
+    value: "3",
   },
   {
     id: 4,
     title: "Data Scientist",
-    value: "data-scientist",
+    value: "4",
   },
   {
     id: 5,
     title: "Developer",
-    value: "developer",
+    value: "5",
   },
   {
     id: 6,
     title: "Designer",
-    value: "designer",
+    value: "6",
   },
   {
     id: 7,
     title: "Devops",
-    value: "devops",
+    value: "7",
   },
   {
     id: 8,
     title: "Entrepreneur",
-    value: "entrepreneur",
+    value: "8",
   },
   {
     id: 9,
     title: "Executive",
-    value: "executive",
+    value: "9",
   },
   {
     id: 10,
     title: "Marketing",
-    value: "marketing",
+    value: "10",
   },
   {
     id: 11,
     title: "Machine Learning Engineer",
-    value: "machine-learning-engineer",
+    value: "11",
   },
   {
     id: 12,
     title: "Network Engineer",
-    value: "network-engineer",
+    value: "12",
   },
   {
     id: 13,
     title: "Product Manager",
-    value: "product-manager",
+    value: "13",
   },
   {
     id: 14,
     title: "Undergraduate student",
-    value: "undergraduate-student",
+    value: "14",
   },
   {
     id: 15,
     title: "Graduate student",
-    value: "graduate-student",
+    value: "15",
   },
   {
     id: 16,
     title: "Sales",
-    value: "sales",
+    value: "16",
   },
   {
     id: 17,
     title: "QA",
-    value: "qa",
+    value: "17",
   },
   {
     id: 18,
     title: "Other",
-    value: "other",
+    value: "18",
   },
 ];
 
 const Page = () => {
-  const [state, formAction] = useFormState(register, {
+  const [preferredLanguage, setPreferredLanguage] = React.useState("0");
+  const registerWithPreferredLanguage = register.bind(null, preferredLanguage);
+
+  const [state, formAction] = useFormState(registerWithPreferredLanguage, {
     message: ``,
     success: false,
   });
@@ -119,11 +122,18 @@ const Page = () => {
       </Heading>
       <form action={formAction} className={styles.form}>
         <FormField
-          label="Full name"
+          label="First name"
           required={true}
-          errorMessage={state.errors?.full_name}
+          errorMessage={state.errors?.firstName}
         >
-          <Input name="full_name" placeholder="Full name" type="text" />
+          <Input name="firstName" placeholder="First name" type="text" />
+        </FormField>
+        <FormField
+          label="Last name"
+          required={true}
+          errorMessage={state.errors?.lastName}
+        >
+          <Input name="lastName" placeholder="Last name" type="text" />
         </FormField>
         <FormField
           label="Email"
@@ -134,10 +144,10 @@ const Page = () => {
         </FormField>
         <FormField
           label="Phone number"
-          errorMessage={state.errors?.phone_number}
+          errorMessage={state.errors?.phoneNumber}
           required={true}
         >
-          <Input name="phone_number" placeholder="Phone number" type="number" />
+          <Input name="phoneNumber" placeholder="Phone number" type="number" />
         </FormField>
         <FormField
           label="Where are you from (Country)?"
@@ -155,25 +165,43 @@ const Page = () => {
         </FormField>
         <FormField
           label="What are your expectations for Microsoft Ignite 2023?"
-          errorMessage={state.errors?.expectations}
+          errorMessage={state.errors?.expectation}
           required={true}
         >
           <Input
-            name="expectations"
+            name="expectation"
             placeholder="Enter you answer"
             type="text"
           />
         </FormField>
         <FormField label="Preferred Language" required={true}>
-          <Checkbox className={styles.checkbox} label="Uzbek" />
-          <Checkbox className={styles.checkbox} label="Russian" />
-          <Checkbox className={styles.checkbox} label="English" />
+          <Checkbox
+            checked={preferredLanguage === "0"}
+            onCheckedChange={() => setPreferredLanguage("0")}
+            className={styles.checkbox}
+            label="Uzbek"
+          />
+          <Checkbox
+            checked={preferredLanguage === "1"}
+            onCheckedChange={() => setPreferredLanguage("1")}
+            name="1"
+            className={styles.checkbox}
+            label="English"
+          />
+          <Checkbox
+            onCheckedChange={() => setPreferredLanguage("2")}
+            checked={preferredLanguage === "2"}
+            name="2"
+            className={styles.checkbox}
+            label="Russian"
+          />
         </FormField>
         <FormField
           label="Choose the best-fitting title or role"
           required={true}
+          errorMessage={state.errors?.role}
         >
-          <Select placeholder="Select a value">
+          <Select name="role" placeholder="Select a value">
             {ROLES.map((role) => {
               return (
                 <SelectItem value={role.value} key={role.id}>
