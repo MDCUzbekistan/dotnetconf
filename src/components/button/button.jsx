@@ -6,7 +6,10 @@ function Button({ variant, asChild, className, children, ...props }) {
   const Comp = asChild ? Slot : "button";
 
   return (
-    <Comp className={`${className} ${styles[variant]}`} {...props}>
+    <Comp
+      className={`${className} ${styles.btn} ${styles[variant]}`}
+      {...props}
+    >
       {children}
     </Comp>
   );

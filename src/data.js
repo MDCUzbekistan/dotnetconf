@@ -35,7 +35,7 @@ export const agenda = [
         id: 4,
         timeFrom: "10:40",
         timeTo: "11:00",
-        title: "From Lines of Code to Leading Teams",
+        title: "Scoring goals together: leadership and teamwork",
         description:
           "This encapsulates the journey we'll explore at our conference. We'll delve into not just the technical aspects but also the leadership and teamwork skills needed to excel in the dynamic world of technology. Join us as we navigate this transformative path together, from mastering code to becoming leaders in our field.",
         speakers: ["Djakhongir Makhkamov"],
