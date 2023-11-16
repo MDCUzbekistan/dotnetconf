@@ -189,12 +189,12 @@ export const speakers = [
   {
     id: 6,
     name: "Doniyor",
-    surname: "Niyozov",
+    surname: "Niazov",
     img: "/images/speakers/doniyor-niyozov.jpg",
     position: "Lead Engineer at Silk Road",
     isFeatured: false,
-    url: "https://www.linkedin.com/in/doniyor-niyozov-380a59135",
-    username: "doniyor-niyozov",
+    url: "https://www.linkedin.com/in/doniyorniazov",
+    username: "doniyorniazov",
   },
   {
     id: 7,
