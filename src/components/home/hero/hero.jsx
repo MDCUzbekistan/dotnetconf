@@ -32,10 +32,7 @@ function Hero() {
             </Link>
           </Button>
           <Button className={styles.btn} variant="outlined" asChild={true}>
-            <Link
-              target="_blank"
-              href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAUFd-8RUMFRXUVpaSjNITkFHUVBOT0FLRDA1MVc2MC4u"
-            >
+            <Link href="/register">
               Register
               <ArrowRight className={styles.arrow} />
             </Link>
