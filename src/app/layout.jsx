@@ -15,7 +15,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata = {
   title: "Microsoft Ignite 2023 Uzbekistan",
   description:
-    "Join the Microsoft Ignite 2023 Uzbekistan free event in December 2 to learn about the newest developments across the .NET platform, open source, and dev tools. Mark your calendar!",
+    "Join the Microsoft Ignite 2023 Uzbekistan free event in December 2 to learn about the newest developments across the .NET platform, open source, and dev tools.",
 };
 
 export default function RootLayout({ children }) {

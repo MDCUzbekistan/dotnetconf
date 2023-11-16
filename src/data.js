@@ -373,7 +373,7 @@ export const sponsors = [
     darkImg: "/images/sponsors/mdcu-black.svg",
     imgWidth: 256,
     imgHeight: 124,
-    link: "https://microsoft.com",
+    link: "/",
   },
 ];
 
