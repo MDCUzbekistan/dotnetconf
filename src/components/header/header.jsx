@@ -9,6 +9,32 @@ import { headerLinks } from "@/data";
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
+  React.useEffect(() => {
+    if (window.innerWidth > 1250) {
+      return;
+    }
+
+    const handleWindowClick = (e) => {
+      if (e.target.closest(`.${styles.burger}`)) {
+        return;
+      }
+
+      setIsMenuOpen(false);
+    };
+
+    const handleWindowScroll = () => {
+      setIsMenuOpen(false);
+    };
+
+    window.addEventListener("click", handleWindowClick);
+    window.addEventListener("scroll", handleWindowScroll);
+
+    return () => {
+      window.removeEventListener("click", handleWindowClick);
+      window.addEventListener("scroll", handleWindowScroll);
+    };
+  }, [isMenuOpen]);
+
   return (
     <header className={styles.wrapper}>
       <Gradient>

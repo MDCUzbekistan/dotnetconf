@@ -10,7 +10,7 @@ const Page = () => {
   return (
     <section className={styles.wrapper}>
       <Heading className={styles.title} level={1}>
-        Organizers
+        Core team
       </Heading>
       <div className={styles.list}>
         {organizers.map((item) => {
