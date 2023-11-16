@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer/footer";
 import Image from "next/image";
-import "add-to-calendar-button";
 import Script from "next/script";
 
 const inter = Open_Sans({ subsets: ["latin"] });

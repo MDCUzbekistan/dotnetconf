@@ -1,0 +1,117 @@
+.label {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+
+  color: var(--color-foreground);
+  margin-bottom: 16px;
+}
+
+.asterisk {
+  color: #e85c41;
+  font-size: 150%;
+  position: relative;
+  top: 5px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  text-indent: 2%;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  color: var(--color-form-input-foreground);
+  background-color: var(--color-form-input-background);
+  border-radius: var(--corner-radius-xs);
+  border: 2px solid var(--color-form-input-border);
+}
+
+.error {
+  color: #e85c41;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  margin-top: 4px;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+
+  color: var(--color-form-input-foreground);
+  background-color: var(--color-form-input-background);
+
+  border-color: transparent;
+  border: 2px solid var(--color-form-input-border);
+}
+
+.checkboxWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.checkboxLabel {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+
+  color: var(--color-foreground);
+}
+
+.selectTrigger {
+  display: flex;
+  padding: 8px 14px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-width: 176px;
+
+  color: var(--color-form-input-foreground);
+  background-color: var(--color-form-input-background);
+  border-radius: var(--corner-radius-xs);
+  border: 2px solid var(--color-form-input-border);
+}
+
+.selectTrigger[data-placeholder] {
+  opacity: 0.5;
+}
+
+.selectContent {
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: var(--color-form-input-background);
+  min-width: 164px;
+  padding: 0 12px;
+}
+
+.selectItem {
+  display: flex;
+  padding: 8px 14px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  color: var(--color-form-input-foreground);
+  border: none;
+  border-radius: 4px;
+}
+
+.selectItem:hover,
+.selectItem:focus {
+  background-color: var(--color-form-input-border);
+  outline: none;
+}
+
+.selectScrollBtn {
+  padding: 3px;
+  color: var(--color-form-input-foreground);
+  display: flex;
+  justify-content: center;
+}

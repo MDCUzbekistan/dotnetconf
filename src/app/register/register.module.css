@@ -12,3 +12,7 @@
 .submitBtn {
   margin-top: 24px;
 }
+
+.checkbox:not(:last-child) {
+  margin-bottom: 8px;
+}
