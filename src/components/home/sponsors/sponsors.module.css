@@ -19,6 +19,11 @@
 
 .darkImg {
   display: none;
+  object-fit: contain;
+}
+
+.lightImg {
+  object-fit: contain;
 }
 
 @media (prefers-color-scheme: light) {

@@ -8,10 +8,12 @@ import {
   Checkbox,
   Select,
   SelectItem,
-} from "@/components/form-field";
+} from "@/components/form-field/form-field";
 import { useFormState } from "react-dom";
 import { register } from "./actions";
 import Submit from "@/components/submit";
+import Toast from "@/components/toast";
+import { redirect, useRouter } from "next/navigation";
 
 const ROLES = [
   {
@@ -107,13 +109,44 @@ const ROLES = [
 ];
 
 const Page = () => {
+  const router = useRouter();
   const [preferredLanguage, setPreferredLanguage] = React.useState("0");
   const registerWithPreferredLanguage = register.bind(null, preferredLanguage);
+  const [toast, setToast] = React.useState({
+    open: false,
+    status: "",
+    title: "Successfully submitted!",
+  });
 
   const [state, formAction] = useFormState(registerWithPreferredLanguage, {
     message: ``,
     success: false,
   });
+
+  React.useEffect(() => {
+    if (!state.success) {
+      if (state.message === "User already exsist") {
+        setToast({
+          open: true,
+          status: "error",
+          title: "User already exists!",
+        });
+      }
+
+      return;
+    }
+
+    setToast({
+      open: true,
+      status: "success",
+      title: state.message,
+    });
+
+    setTimeout(() => {
+      console.log(123);
+      router.push("/");
+    }, 1200);
+  }, [state, router]);
 
   return (
     <section className={styles.wrapper}>
@@ -143,6 +176,21 @@ const Page = () => {
           <Input name="email" placeholder="Email" type="email" />
         </FormField>
         <FormField
+          label="Choose the best-fitting title or role"
+          required={true}
+          errorMessage={state.errors?.role}
+        >
+          <Select name="role" placeholder="Select a role">
+            {ROLES.map((role) => {
+              return (
+                <SelectItem value={role.value} key={role.id}>
+                  {role.title}
+                </SelectItem>
+              );
+            })}
+          </Select>
+        </FormField>
+        <FormField
           label="Phone number"
           errorMessage={state.errors?.phoneNumber}
           required={true}
@@ -164,7 +212,7 @@ const Page = () => {
           <Input name="city" placeholder="Example: Tashkent" type="text" />
         </FormField>
         <FormField
-          label="What are your expectations for Microsoft Ignite 2023?"
+          label="What are your expectations for conference?"
           errorMessage={state.errors?.expectation}
           required={true}
         >
@@ -175,46 +223,45 @@ const Page = () => {
           />
         </FormField>
         <FormField label="Preferred Language" required={true}>
-          <Checkbox
-            checked={preferredLanguage === "0"}
-            onCheckedChange={() => setPreferredLanguage("0")}
-            className={styles.checkbox}
-            label="Uzbek"
-          />
-          <Checkbox
-            checked={preferredLanguage === "1"}
-            onCheckedChange={() => setPreferredLanguage("1")}
-            name="1"
-            className={styles.checkbox}
-            label="English"
-          />
-          <Checkbox
-            onCheckedChange={() => setPreferredLanguage("2")}
-            checked={preferredLanguage === "2"}
-            name="2"
-            className={styles.checkbox}
-            label="Russian"
-          />
-        </FormField>
-        <FormField
-          label="Choose the best-fitting title or role"
-          required={true}
-          errorMessage={state.errors?.role}
-        >
-          <Select name="role" placeholder="Select a value">
-            {ROLES.map((role) => {
-              return (
-                <SelectItem value={role.value} key={role.id}>
-                  {role.title}
-                </SelectItem>
-              );
-            })}
-          </Select>
+          <div className={styles.checkboxesWrapper}>
+            <Checkbox
+              checked={preferredLanguage === "0"}
+              onCheckedChange={() => setPreferredLanguage("0")}
+              className={styles.checkbox}
+              label="Uzbek"
+            />
+            <Checkbox
+              checked={preferredLanguage === "1"}
+              onCheckedChange={() => setPreferredLanguage("1")}
+              name="1"
+              className={styles.checkbox}
+              label="English"
+            />
+            <Checkbox
+              onCheckedChange={() => setPreferredLanguage("2")}
+              checked={preferredLanguage === "2"}
+              name="2"
+              className={styles.checkbox}
+              label="Russian"
+            />
+          </div>
         </FormField>
         <Submit className={styles.submitBtn} variant="filled">
           Submit
         </Submit>
       </form>
+      <Toast
+        open={toast.open}
+        title={toast.title}
+        status={toast.status}
+        onOpenChange={() => {
+          setToast({
+            open: false,
+            title: "",
+            status: "",
+          });
+        }}
+      />
     </section>
   );
 };

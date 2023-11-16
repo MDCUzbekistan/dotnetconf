@@ -1,0 +1,23 @@
+.wrapper {
+  padding: 12px 16px;
+  background-color: var(--color-dotnet-solid-btn-accent-background);
+  min-width: 190px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-radius: 6px;
+}
+
+.viewport {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+}

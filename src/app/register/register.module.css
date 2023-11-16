@@ -7,12 +7,17 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  width: 70%;
+  margin: 0 auto;
 }
 
 .submitBtn {
   margin-top: 24px;
 }
 
-.checkbox:not(:last-child) {
-  margin-bottom: 8px;
+.checkboxesWrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }

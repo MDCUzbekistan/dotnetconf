@@ -371,10 +371,10 @@ export const sponsors = [
   {
     id: 1,
     title: "Digital Generation Uzbekistan",
-    lightImg: "/images/sponsors/dg.svg",
-    darkImg: "/images/sponsors/dg.svg",
-    imgWidth: 256,
-    imgHeight: 124,
+    lightImg: "/images/sponsors/dg-light.png",
+    darkImg: "/images/sponsors/dg.png",
+    imgWidth: 196,
+    imgHeight: 84,
     link: "https://digitalgeneration.uz/uz/",
   },
   {

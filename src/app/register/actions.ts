@@ -57,7 +57,6 @@ export async function register(
   }
 
   try {
-    console.log(validatedFields.data);
     await axios.post(
       `${process.env.NEXT_PUBLIC_API_URL}/users`,
       validatedFields.data
@@ -67,11 +66,11 @@ export async function register(
       success: true,
       message: `Successfully registered!`,
     };
-  } catch (error) {
+  } catch (error: any) {
     console.log(error);
     return {
       success: false,
-      message: `Server error, see server logs`,
+      message: error.message,
     };
   }
 }
