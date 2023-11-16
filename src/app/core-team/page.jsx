@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-import styles from "./organizers.module.css";
+import styles from "./core-team.module.css";
 import Heading from "@/components/heading";
 import Image from "next/image";
 import Gradient from "@/components/gradient";

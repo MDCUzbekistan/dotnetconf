@@ -283,8 +283,8 @@ export const headerLinks = [
   },
   {
     id: 4,
-    title: "Organizers",
-    slug: "organizers",
+    title: "Core team",
+    slug: "core-team",
   },
 ];
 
@@ -457,5 +457,13 @@ export const organizers = [
     img: "/images/core-team/bekhzodkhon.jpg",
     url: "https://www.linkedin.com/in/bekhzodkhon-makhkamov-514791b2/",
     username: "bekhzodkhon-makhkamov",
+  },
+  {
+    id: 11,
+    name: "Ma'ruf",
+    surname: "Zakirov",
+    img: "/images/core-team/maruf.jpg",
+    url: "https://www.linkedin.com/in/ma-ruf-zakirov/",
+    username: "maruf-zakirov",
   },
 ];
