@@ -222,7 +222,7 @@ export const speakers = [
     surname: "Shamsiev",
     img: "/images/speakers/izzat-sh.jpg",
     position: "Lead .NET Engineer at EPAM Systems",
-    isFeatured: true,
+    isFeatured: false,
     url: "https://www.linkedin.com/in/izzatkhon",
     username: "izzatkhon",
   },
@@ -235,6 +235,17 @@ export const speakers = [
     isFeatured: true,
     url: "https://www.linkedin.com/in/saud-abdulwahed-002b8016b/",
     username: "saud-abdulwahed",
+  },
+  {
+    id: 11,
+    name: "Steven",
+    surname: "Giesel",
+    img: "/images/speakers/steven-giesel.jpg",
+    position:
+      "Software Engineer | Microsoft MVP | Freelancer | Speaker | Open Source Enthusiast",
+    isFeatured: true,
+    url: "https://www.linkedin.com/in/steven-giesel/",
+    username: "steven-giesel",
   },
 ];
 

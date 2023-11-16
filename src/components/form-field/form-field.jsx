@@ -34,7 +34,11 @@ function Checkbox({ label, className, ...props }) {
 
   return (
     <div className={`${className} ${styles.checkboxWrapper}`}>
-      <CheckboxPrimitives.Root className={styles.checkbox} {...props}>
+      <CheckboxPrimitives.Root
+        id={checkboxId}
+        className={styles.checkbox}
+        {...props}
+      >
         <CheckboxPrimitives.Indicator className={styles.Indicator}>
           <Check size={16} />
         </CheckboxPrimitives.Indicator>
@@ -50,8 +54,8 @@ function Select({ className, placeholder, children, ...props }) {
   const { id } = React.useContext(FormFieldContext);
 
   return (
-    <SelectPrimitives.Root id={id} className={className} {...props}>
-      <SelectPrimitives.Trigger className={styles.selectTrigger}>
+    <SelectPrimitives.Root className={className} {...props}>
+      <SelectPrimitives.Trigger id={id} className={styles.selectTrigger}>
         <SelectPrimitives.Value placeholder={placeholder} />
         <SelectPrimitives.Icon className={styles.selectIcon}>
           <ChevronDown size={16} />
