@@ -70,7 +70,7 @@ export async function register(
     console.log(error);
     return {
       success: false,
-      message: error.message,
+      message: error.response.data.message,
     };
   }
 }

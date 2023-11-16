@@ -125,6 +125,7 @@ const Page = () => {
 
   React.useEffect(() => {
     if (!state.success) {
+      console.log(state);
       if (state.message === "User already exsist") {
         setToast({
           open: true,
