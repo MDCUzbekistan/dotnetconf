@@ -4,6 +4,15 @@
   font-weight: 600;
 }
 
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn:disabled:hover {
+  background-color: var(--color-dotnet-solid-btn-accent-background);
+}
+
 .outlined {
   border: 2px solid var(--color-dotnet-outline-btn-accent-foreground);
   color: var(--color-dotnet-link-btn-neutral-foreground);

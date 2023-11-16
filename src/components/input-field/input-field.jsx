@@ -7,6 +7,7 @@ function InputField({
   required,
   inputType,
   inputName,
+  errorMessage,
   inputPlaceholder,
 }) {
   const id = React.useId();
@@ -23,6 +24,7 @@ function InputField({
         type={inputType}
         id={id}
       />
+      {errorMessage && <p className={styles.error}>{errorMessage}</p>}
     </div>
   );
 }

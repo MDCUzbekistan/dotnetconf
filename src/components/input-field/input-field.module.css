@@ -25,3 +25,10 @@
   border-radius: var(--corner-radius-xs);
   border: 2px solid var(--color-form-input-border);
 }
+
+.error {
+  color: #e85c41;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  margin-top: 4px;
+}

@@ -70,6 +70,10 @@ export default function RootLayout({ children }) {
             <Footer />
           </div>
         </div>
+        <Script
+          type="text/javascript"
+          src={`https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=${process.env.NEXT_PUBLIC_BING_MAPS_KEY}`}
+        />
       </body>
     </html>
   );
