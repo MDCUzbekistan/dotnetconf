@@ -60,14 +60,20 @@
     width: fit-content;
     min-width: 250px;
     z-index: 1;
+
+    transition: 0.3s;
   }
 
   .navOpened {
-    animation: slideUp 0.3s ease-in-out;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 
   .navClosed {
-    animation: slideDown 0.3s ease-in-out forwards;
+    transform: translateY(16px);
+    opacity: 0;
+    visibility: hidden;
   }
 
   .list {
@@ -123,10 +129,9 @@
   }
 }
 
-@keyframes slideDown {
+@keyframes hide {
   to {
-    transform: translateY(16px);
     opacity: 0;
-    visibility: hidden;
+    pointer-events: none;
   }
 }

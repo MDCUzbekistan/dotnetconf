@@ -12,111 +12,15 @@ import {
 import { useFormState } from "react-dom";
 import { register } from "./actions";
 import Submit from "@/components/submit";
-import Toast from "@/components/toast";
+import { useToast } from "@/components/toast/toast";
 import { redirect, useRouter } from "next/navigation";
-
-const ROLES = [
-  {
-    id: 1,
-    title: "Architect",
-    value: "1",
-  },
-  {
-    id: 2,
-    title: "Data analyst",
-    value: "2",
-  },
-  {
-    id: 3,
-    title: "Data Engineer",
-    value: "3",
-  },
-  {
-    id: 4,
-    title: "Data Scientist",
-    value: "4",
-  },
-  {
-    id: 5,
-    title: "Developer",
-    value: "5",
-  },
-  {
-    id: 6,
-    title: "Designer",
-    value: "6",
-  },
-  {
-    id: 7,
-    title: "Devops",
-    value: "7",
-  },
-  {
-    id: 8,
-    title: "Entrepreneur",
-    value: "8",
-  },
-  {
-    id: 9,
-    title: "Executive",
-    value: "9",
-  },
-  {
-    id: 10,
-    title: "Marketing",
-    value: "10",
-  },
-  {
-    id: 11,
-    title: "Machine Learning Engineer",
-    value: "11",
-  },
-  {
-    id: 12,
-    title: "Network Engineer",
-    value: "12",
-  },
-  {
-    id: 13,
-    title: "Product Manager",
-    value: "13",
-  },
-  {
-    id: 14,
-    title: "Undergraduate student",
-    value: "14",
-  },
-  {
-    id: 15,
-    title: "Graduate student",
-    value: "15",
-  },
-  {
-    id: 16,
-    title: "Sales",
-    value: "16",
-  },
-  {
-    id: 17,
-    title: "QA",
-    value: "17",
-  },
-  {
-    id: 18,
-    title: "Other",
-    value: "18",
-  },
-];
+import { ROLES } from "@/data";
 
 const Page = () => {
+  const { openToast } = useToast();
   const router = useRouter();
   const [preferredLanguage, setPreferredLanguage] = React.useState("0");
   const registerWithPreferredLanguage = register.bind(null, preferredLanguage);
-  const [toast, setToast] = React.useState({
-    open: false,
-    status: "",
-    title: "Successfully submitted!",
-  });
 
   const [state, formAction] = useFormState(registerWithPreferredLanguage, {
     message: ``,
@@ -124,30 +28,24 @@ const Page = () => {
   });
 
   React.useEffect(() => {
-    if (!state.success) {
-      console.log(state);
-      if (state.message === "User already exsist") {
-        setToast({
-          open: true,
-          status: "error",
-          title: "User already exists!",
-        });
-      }
+    if (state.message) {
+      openToast({
+        status: "error",
+        title: state.message,
+      });
+    }
 
+    if (!state.success) {
       return;
     }
 
-    setToast({
-      open: true,
+    openToast({
       status: "success",
       title: state.message,
     });
 
-    setTimeout(() => {
-      console.log(123);
-      router.push("/");
-    }, 1200);
-  }, [state, router]);
+    redirect("/");
+  }, [state, router, openToast]);
 
   return (
     <section className={styles.wrapper}>
@@ -251,18 +149,6 @@ const Page = () => {
           Submit
         </Submit>
       </form>
-      <Toast
-        open={toast.open}
-        title={toast.title}
-        status={toast.status}
-        onOpenChange={() => {
-          setToast({
-            open: false,
-            title: "",
-            status: "",
-          });
-        }}
-      />
     </section>
   );
 };

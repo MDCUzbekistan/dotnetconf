@@ -1,39 +1,67 @@
+"use client";
+
 import React from "react";
-import {
-  Root,
-  Title,
-  Description,
-  Viewport,
-  Provider,
-} from "@radix-ui/react-toast";
+import { Root, Title, Viewport, Provider } from "@radix-ui/react-toast";
 import { Check, X } from "lucide-react";
 import styles from "./toast.module.css";
 
-function Toast({ title, status, desc, open = false, onOpenChange }) {
+const ToastContext = React.createContext();
+
+function Toast({ title, status, open = false, onOpenChange }) {
   return (
-    <Provider duration={5000}>
-      <Root
-        style={{
-          backgroundColor:
-            status === "success"
-              ? "var(--color-dotnet-solid-btn-accent-background)"
-              : "#e85c41",
-        }}
-        className={styles.wrapper}
-        open={open}
-        onOpenChange={onOpenChange}
-      >
-        {status === "success" && <Check color="lightgreen" />}
+    <>
+      <Root className={styles.wrapper} open={open} onOpenChange={onOpenChange}>
+        {status === "success" ? (
+          <Check color="lightgreen" />
+        ) : status === "error" ? (
+          <X color="#e85c41" />
+        ) : null}
         <Title asChild>
           <h3 className={styles.title}>{title}</h3>
         </Title>
-        <Description asChild>
-          <p className="desc">{desc}</p>
-        </Description>
       </Root>
       <Viewport className={styles.viewport} />
-    </Provider>
+    </>
   );
 }
 
-export default Toast;
+function ToastProvider({ duration = 3000, children }) {
+  const [toast, setToast] = React.useState({
+    open: false,
+    status: "",
+    title: "",
+  });
+
+  const openToast = React.useCallback(({ title, status }) => {
+    setToast({
+      title,
+      status,
+      open: true,
+    });
+  }, []);
+
+  return (
+    <ToastContext.Provider value={{ openToast }}>
+      <Provider duration={duration}>
+        {children}
+        <Toast
+          title={toast.title}
+          status={toast.status}
+          open={toast.open}
+          onOpenChange={() => {
+            setToast({
+              ...toast,
+              open: false,
+            });
+          }}
+        />
+      </Provider>
+    </ToastContext.Provider>
+  );
+}
+
+const useToast = () => {
+  return React.useContext(ToastContext);
+};
+
+export { ToastProvider, useToast };

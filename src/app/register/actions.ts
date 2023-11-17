@@ -1,3 +1,4 @@
+"use server";
 import axios from "axios";
 import { z } from "zod";
 
@@ -5,11 +6,19 @@ const RegistrationSchema = z.object({
   firstName: z.string().min(3, "Minimum length should be 3"),
   lastName: z.string().min(3, "Minimum length should be 3"),
   email: z.string().email("Please provide a valid email"),
-  phoneNumber: z.string(),
+  phoneNumber: z
+    .string()
+    .refine(
+      (value) => /^[+\d]+$/.test(value),
+      "Please provide a valid phone number"
+    ),
   preferredLanguage: z.coerce.number(),
   country: z.string().min(3, "Please provide text with more than 3 characters"),
   city: z.string().min(2, "Please provide text with more than 2 characters"),
-  role: z.coerce.number(),
+  role: z
+    .string()
+    .min(1, "Please provide a role")
+    .transform((value) => Number(value)),
   expectation: z
     .string()
     .min(3, "Please provide text with more than 3 characters"),
@@ -21,7 +30,6 @@ type RegistrationState = {
     lastName?: string[];
     email?: string[];
     phoneNumber?: string[];
-    preferredLanguage: string[];
     country?: string[];
     city?: string[];
     role?: string[];
@@ -67,7 +75,6 @@ export async function register(
       message: `Successfully registered!`,
     };
   } catch (error: any) {
-    console.log(error);
     return {
       success: false,
       message: error.response.data.message,

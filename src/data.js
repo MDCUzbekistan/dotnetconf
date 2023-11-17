@@ -489,3 +489,96 @@ export const organizers = [
     username: "maruf-zakirov",
   },
 ];
+
+export const ROLES = [
+  {
+    id: 1,
+    title: "Architect",
+    value: "1",
+  },
+  {
+    id: 2,
+    title: "Data analyst",
+    value: "2",
+  },
+  {
+    id: 3,
+    title: "Data Engineer",
+    value: "3",
+  },
+  {
+    id: 4,
+    title: "Data Scientist",
+    value: "4",
+  },
+  {
+    id: 5,
+    title: "Developer",
+    value: "5",
+  },
+  {
+    id: 6,
+    title: "Designer",
+    value: "6",
+  },
+  {
+    id: 7,
+    title: "Devops",
+    value: "7",
+  },
+  {
+    id: 8,
+    title: "Entrepreneur",
+    value: "8",
+  },
+  {
+    id: 9,
+    title: "Executive",
+    value: "9",
+  },
+  {
+    id: 10,
+    title: "Marketing",
+    value: "10",
+  },
+  {
+    id: 11,
+    title: "Machine Learning Engineer",
+    value: "11",
+  },
+  {
+    id: 12,
+    title: "Network Engineer",
+    value: "12",
+  },
+  {
+    id: 13,
+    title: "Product Manager",
+    value: "13",
+  },
+  {
+    id: 14,
+    title: "Undergraduate student",
+    value: "14",
+  },
+  {
+    id: 15,
+    title: "Graduate student",
+    value: "15",
+  },
+  {
+    id: 16,
+    title: "Sales",
+    value: "16",
+  },
+  {
+    id: 17,
+    title: "QA",
+    value: "17",
+  },
+  {
+    id: 18,
+    title: "Other",
+    value: "18",
+  },
+];

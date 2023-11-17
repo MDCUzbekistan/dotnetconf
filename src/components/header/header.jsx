@@ -23,6 +23,10 @@ function Header() {
     };
 
     const handleWindowScroll = () => {
+      if (!isMenuOpen) {
+        return;
+      }
+
       setIsMenuOpen(false);
     };
 
