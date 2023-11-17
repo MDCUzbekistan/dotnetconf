@@ -7,7 +7,7 @@ const LOCATION_COORDINATES = {
 };
 
 // NOT YET REUSABLE
-function Map(props) {
+function Map({ mode, ...props }) {
   React.useEffect(() => {
     window.GetMap = function () {
       const map = new Microsoft.Maps.Map(`#mapId`, {
@@ -17,7 +17,10 @@ function Map(props) {
           LOCATION_COORDINATES.longitude
         ),
         zoom: 16,
-        mapTypeId: Microsoft.Maps.MapTypeId.canvasDark,
+        mapTypeId:
+          mode === "dark"
+            ? Microsoft.Maps.MapTypeId.canvasDark
+            : Microsoft.Maps.MapTypeId.canvasLight,
       });
 
       const pushpin = new Microsoft.Maps.Pushpin(
@@ -37,7 +40,7 @@ function Map(props) {
     if (window.Microsoft && window.Microsoft.Maps) {
       window.GetMap();
     }
-  }, []);
+  }, [mode]);
 
   return <div {...props} id={"mapId"}></div>;
 }

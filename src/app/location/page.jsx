@@ -5,7 +5,7 @@ const Page = () => {
   return (
     <Map
       style={{
-        height: 720,
+        height: 640,
         overflow: "hidden",
         borderRadius: 12,
       }}

@@ -393,8 +393,8 @@ export const sponsors = [
     title: "Microsoft developers community in Uzbekistan",
     lightImg: "/images/sponsors/mdcu.svg",
     darkImg: "/images/sponsors/mdcu-black.svg",
-    imgWidth: 256,
-    imgHeight: 124,
+    imgWidth: 236,
+    imgHeight: 104,
     link: "/",
   },
 ];
