@@ -398,7 +398,6 @@ export const sponsors = [
     link: "/",
   },
 ];
-
 export const organizers = [
   {
     id: 1,
