@@ -387,6 +387,7 @@ export const sponsors = [
     link: "/",
   },
 ];
+
 export const organizers = [
   {
     id: 1,
@@ -475,6 +476,14 @@ export const organizers = [
     img: "/images/core-team/maruf.jpg",
     url: "https://www.linkedin.com/in/ma-ruf-zakirov/",
     username: "maruf-zakirov",
+  },
+  {
+    id: 12,
+    name: "Biloliddin",
+    surname: "Abzalov",
+    img: "/images/core-team/biloliddin.jpg",
+    url: "https://www.instagram.com/bill_teacher",
+    username: "bill_teacher",
   },
 ];
 

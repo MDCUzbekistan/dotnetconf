@@ -21,7 +21,6 @@ const Page = () => {
   const router = useRouter();
   const [preferredLanguage, setPreferredLanguage] = React.useState("0");
   const registerWithPreferredLanguage = register.bind(null, preferredLanguage);
-
   const [state, formAction] = useFormState(registerWithPreferredLanguage, {
     message: ``,
     success: false,
