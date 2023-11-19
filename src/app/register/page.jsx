@@ -94,7 +94,11 @@ const Page = () => {
           errorMessage={state.errors?.phoneNumber}
           required={true}
         >
-          <Input name="phoneNumber" placeholder="Phone number" type="text" />
+          <Input
+            name="phoneNumber"
+            placeholder="Example: +998991234567"
+            type="text"
+          />
         </FormField>
         <FormField
           label="Where are you from (Country)?"
