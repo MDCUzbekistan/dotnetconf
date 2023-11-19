@@ -167,17 +167,6 @@ export const speakers = [
     username: "djahon",
   },
   {
-    id: 1122,
-    name: "Shavkat",
-    surname: "Karimov",
-    img: "/images/speakers/shavkat-karimov.jpg",
-    position:
-      "Head of IT Community of Uzbekistan | Keynote Speaker | SEO Executive | ex-Microsoft",
-    isFeatured: true,
-    url: "https://www.linkedin.com/in/shavkat",
-    username: "shavkat",
-  },
-  {
     id: 4,
     name: "Bobur",
     surname: "Umurzokov",
