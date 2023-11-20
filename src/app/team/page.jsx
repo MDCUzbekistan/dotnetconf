@@ -112,7 +112,7 @@ const Page = () => {
                       <p className={styles.cardBio}>{item.bio}</p>
                       <a
                         className={styles.cardLink}
-                        href={item.url}
+                        href={item.media}
                         target="_blank"
                       >
                         @{item.username}{" "}
