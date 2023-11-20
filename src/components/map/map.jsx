@@ -2,8 +2,8 @@
 import React from "react";
 
 const LOCATION_COORDINATES = {
-  latitude: 41.32407065920933,
-  longitude: 69.32011675297309,
+  latitude: 41.316084672314155,
+  longitude: 69.2954484742699,
 };
 
 // NOT YET REUSABLE

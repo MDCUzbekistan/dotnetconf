@@ -1,0 +1,37 @@
+.list {
+  display: flex;
+}
+
+.trigger {
+  background-color: var(--dotnet-speaker-card-background);
+  border: 2px solid;
+  border-left: 0;
+  color: var(--color-dotnet-link-btn-neutral-foreground);
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.trigger:first-child {
+  border: 2px solid;
+  border-radius: 9px 0 0 9px;
+}
+
+.trigger:last-child {
+  border-radius: 0 9px 9px 0;
+}
+
+.trigger[data-state="active"] {
+  background: var(--color-primary-gradient);
+}
+
+@media (max-width: 768px) {
+  .list {
+    justify-content: center;
+  }
+
+  .trigger {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    padding: 4px 6px;
+  }
+}

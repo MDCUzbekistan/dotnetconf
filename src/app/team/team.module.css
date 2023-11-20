@@ -2,6 +2,17 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
   gap: 48px;
+  margin-bottom: 64px;
+}
+
+.volunteersList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(342px, 1fr));
+  gap: 24px;
+}
+
+.tabsList {
+  margin-bottom: 24px;
 }
 
 .title {
