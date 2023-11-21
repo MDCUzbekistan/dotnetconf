@@ -518,7 +518,7 @@ export const volunteers = [
   },
   {
     id: 5,
-    fullName: "Adhamov Azizbek",
+    fullName: "Adxamov Azizbek",
     team: "docs-team",
     media: "https://www.linkedin.com/in/azizbek-adkhamov-46b736296/",
     username: "azizbek-adkhamov",
@@ -553,7 +553,7 @@ export const volunteers = [
   },
   {
     id: 10,
-    fullName: "HayotBahrom Nuriddinov",
+    fullName: "Hayotbahrom Nurdinov",
     team: "docs-team",
     media: "https://www.linkedin.com/in/hayotbahrom-nurdinov-727bb2278",
     username: "hayotbahrom-nurdinov",
@@ -588,7 +588,7 @@ export const volunteers = [
   },
   {
     id: 15,
-    fullName: "Xurshidbek Yo'ldoshov",
+    fullName: "Xurshidbek Yo'ldoshev",
     team: "docs-team",
     media: "https://www.linkedin.com/in/khurshid-yuldoshev-b79947227/",
     username: "khurshid-yuldoshev",
@@ -630,7 +630,7 @@ export const volunteers = [
   },
   {
     id: 22,
-    fullName: "Sohib Jaynarov",
+    fullName: "Sokhib Jaynarov",
     team: "docs-team",
     media: "https://www.linkedin.com/in/sokhibjaynarov",
     username: "sokhibjaynarov",
@@ -655,6 +655,41 @@ export const volunteers = [
     team: "docs-team",
     media: "https://www.linkedin.com/in/muhammadamin-akbarov-27207b297",
     username: "muhammadamin-akbarov",
+  },
+  {
+    id: 26,
+    fullName: "Muhammadxo'ja Eshnazarov",
+    team: "design-team",
+    media: "https://www.instagram.com/muhammad._khuja",
+    username: "muhammad._khuja",
+  },
+  {
+    id: 27,
+    fullName: "Mukhammadyusuf Soliev",
+    team: "design-team",
+    media: "https://www.instagram.com/mukhammadyusuf_soliev",
+    username: "mukhammadyusuf_soliev",
+  },
+  {
+    id: 28,
+    fullName: "Nurmuhammad G'ulomov",
+    team: "design-team",
+    media: "https://www.linkedin.com/in/nvarovich",
+    username: "nvarovich",
+  },
+  {
+    id: 29,
+    fullName: "Muhammad Umarqulov",
+    team: "dev-team",
+    media: "https://www.linkedin.com/in/muhammad-umarqulov/",
+    username: "muhammad-umarqulov",
+  },
+  {
+    id: 30,
+    fullName: "Botirali Raxmonberdiyev",
+    team: "dev-team",
+    media: "https://www.linkedin.com/in/ali-raxmonberdiyev/",
+    username: "ali-raxmonberdiyev",
   },
 ];
 

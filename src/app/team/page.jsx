@@ -16,16 +16,11 @@ const tabs = [
   },
   {
     id: 2,
-    title: "Marketing Team",
-    slug: "marketing-team",
-  },
-  {
-    id: 3,
     title: "Dev team",
     slug: "dev-team",
   },
   {
-    id: 4,
+    id: 3,
     title: "Design Team",
     slug: "design-team",
   },
