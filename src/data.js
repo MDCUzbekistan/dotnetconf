@@ -527,7 +527,7 @@ export const volunteers = [
     id: 6,
     fullName: "Abbos Abduqayumov",
     team: "docs-team",
-    media: "linkedin.com/in/abbosbeck",
+    media: "https://www.linkedin.com/in/abbosbeck",
     username: "abbosbeck",
   },
   {
@@ -562,7 +562,7 @@ export const volunteers = [
     id: 11,
     fullName: "Muhammadzokir Alijonov",
     team: "docs-team",
-    media: "www.linkedin.com/in/mukhammadzokir-alijonov-335827284",
+    media: "https://www.linkedin.com/in/mukhammadzokir-alijonov-335827284",
     username: "mukhammadzokir-alijonov",
   },
   {
@@ -653,7 +653,7 @@ export const volunteers = [
     id: 25,
     fullName: "Muhammadamin Akbarov",
     team: "docs-team",
-    media: "www.linkedin.com/in/muhammadamin-akbarov-27207b297",
+    media: "https://www.linkedin.com/in/muhammadamin-akbarov-27207b297",
     username: "muhammadamin-akbarov",
   },
 ];
