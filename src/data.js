@@ -108,9 +108,10 @@ export const agenda = [
         id: 12,
         timeFrom: "15:30",
         timeTo: "16:00",
-        title: "What's New in C# 12",
+        title:
+          "Azure Kubernetes Service: Your First Steps to Cloud Native Success",
         description:
-          "Highly anticipated session at our conference. Join us to explore the latest features, enhancements, and language innovations in C# 12, and stay at the forefront of modern programming capabilities. This session is your gateway to unlocking the full potential of the C# language.",
+          "It will be a focal point of discussion at our conference. Join us to explore the world of cloud-native development, harnessing the power of Azure Kubernetes Service to create scalable, resilient, and highly available cloud applications. This session is your gateway to mastering the art of cloud-native architecture with Azure Kubernetes Service.",
         speakers: ["Doniyor Niyozov"],
       },
       {
