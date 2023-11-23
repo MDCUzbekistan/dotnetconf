@@ -736,6 +736,13 @@ export const volunteers = [
     media: "https://www.linkedin.com/in/ali-raxmonberdiyev/",
     username: "ali-raxmonberdiyev",
   },
+  {
+    id: 31,
+    fullName: "Javohirbek G'ulomov",
+    team: "dev-team",
+    media: "https://www.linkedin.com/in/javokhirbek-gulomov-981103235/",
+    username: "Gulomov_Javoxirbek",
+  },
 ];
 
 export const ROLES = [
