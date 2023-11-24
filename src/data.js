@@ -44,9 +44,9 @@ export const agenda = [
         id: 5,
         timeFrom: "11:00",
         timeTo: "11:20",
-        title: "Open Source Models in Enterprise Environments",
+        title: "Modern patterns in systems design and architecture",
         description:
-          "It will be a central theme at our conference. We will delve into the dynamic landscape of open-source technologies and their integration within enterprise settings. Join us to explore innovative strategies and success stories that showcase the power of open-source solutions in driving enterprise growth and innovation",
+          " We'll explore the latest trends and patterns in systems design and architecture, equipping you with the knowledge and tools to build scalable, resilient, and highly available systems. Join us to discover the future of systems design and architecture, and learn how to leverage it to drive innovation and growth.",
         speakers: ["Hassan Habib"],
       },
       {
