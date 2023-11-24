@@ -6,7 +6,7 @@
   background-color: var(--dotnet-speaker-card-background);
   border: 2px solid #3d3d3d;
   border-left: 0;
-  color: var(--color-brand-purple-tint-45);
+  color: var(--color-title-font);
   padding: 6px 12px;
   cursor: pointer;
 
@@ -24,6 +24,7 @@
 
 .trigger[data-state="active"] {
   background: var(--color-primary-gradient);
+  color: var(--color-brand-purple-tint-45);
 }
 
 @media (max-width: 768px) {

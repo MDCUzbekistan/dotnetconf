@@ -32,10 +32,6 @@ const tabsContent = [
     slug: "docs-team",
   },
   {
-    id: 2,
-    slug: "marketing-team",
-  },
-  {
     id: 3,
     slug: "dev-team",
   },

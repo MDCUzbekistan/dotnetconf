@@ -118,9 +118,9 @@ export const agenda = [
         id: 13,
         timeFrom: "16:00",
         timeTo: "16:30",
-        title: "Building Cloud Native apps with .NET 8",
+        title: "First look at .NET Aspire: Building cloud-ready applications",
         description:
-          "Building Cloud-Native Apps with .NET 8 is a key focus of our conference. Join us to delve into the world of cloud-native development, harnessing the power of .NET 8 to create scalable, resilient, and highly available cloud applications. This session is your gateway to mastering the art of cloud-native architecture with .NET.",
+          " .NET Aspire is a new cloud-native application framework that enables developers to build cloud-ready applications. Join us to explore the capabilities of this new framework and learn how to leverage it to build scalable, resilient, and highly available cloud applications. Don't miss this opportunity to get a first look at .NET Aspire and its potential in the cloud ecosystem.",
         speakers: ["Milan Jovanović"],
       },
       {
@@ -372,8 +372,8 @@ export const sponsors = [
   {
     id: 1,
     title: "Digital Generation Uzbekistan",
-    lightImg: "/images/sponsors/dg-light.png",
-    darkImg: "/images/sponsors/dg-dark.png",
+    lightImg: "/images/sponsors/dg-light.svg",
+    darkImg: "/images/sponsors/dg-dark.svg",
     imgWidth: 196,
     imgHeight: 84,
     link: "https://digitalgeneration.uz/uz/",
@@ -391,7 +391,7 @@ export const sponsors = [
     id: 4,
     title: "New Uzbekistan University",
     lightImg: "/images/sponsors/new-uzb-light.png",
-    darkImg: "/images/sponsors/new-uzb-light.png",
+    darkImg: "/images/sponsors/new-uzb-dark.png",
     imgWidth: 236,
     imgHeight: 104,
     link: "https://newuu.uz/",
@@ -399,8 +399,8 @@ export const sponsors = [
   {
     id: 5,
     title: "Ta'lim agentligi",
-    lightImg: "/images/sponsors/talim-agentligi-light.png",
-    darkImg: "/images/sponsors/talim-agentligi-light.png",
+    lightImg: "/images/sponsors/talim-agentligi-light.svg",
+    darkImg: "/images/sponsors/talim-agentligi-dark.svg",
     imgWidth: 236,
     imgHeight: 104,
     link: "https://piima.uz/page/about",
@@ -408,7 +408,7 @@ export const sponsors = [
   {
     id: 6,
     title: "Ta'lim vazirligi",
-    lightImg: "/images/sponsors/talim-vazirligi-light.png",
+    lightImg: "/images/sponsors/talim-vazirligi-light.svg",
     darkImg: "/images/sponsors/talim-vazirligi-dark.svg",
     imgWidth: 236,
     imgHeight: 104,
@@ -417,8 +417,8 @@ export const sponsors = [
   {
     id: 7,
     title: "Zamin foundation",
-    lightImg: "/images/sponsors/zamin-light.png",
-    darkImg: "/images/sponsors/zamin-light.png",
+    lightImg: "/images/sponsors/zamin-light.svg",
+    darkImg: "/images/sponsors/zamin-dark.svg",
     imgWidth: 236,
     imgHeight: 104,
     link: "https://zaminfoundation.ngo/",
@@ -426,10 +426,10 @@ export const sponsors = [
   {
     id: 8,
     title: "Al Xorazmiy nomidagi Axborot Texnologiyalari Maktabi",
-    lightImg: "/images/sponsors/al-xorazmiy-light.png",
-    darkImg: "/images/sponsors/al-xorazmiy-light.png",
-    imgWidth: 236,
-    imgHeight: 104,
+    lightImg: "/images/sponsors/al-xorazmiy-light.svg",
+    darkImg: "/images/sponsors/al-xorazmiy-dark.svg",
+    imgWidth: 276,
+    imgHeight: 144,
     link: "https://ictschool.uz/",
   },
 ];
