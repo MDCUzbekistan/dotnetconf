@@ -89,9 +89,9 @@ export const agenda = [
         id: 10,
         timeFrom: "14:30",
         timeTo: "15:00",
-        title: "Full stack web UI with Blazor in .NET 8",
+        title: "What's new in C# 12",
         description:
-          "Captivating topic we'll delve into during our conference. Join us to uncover the power of Blazor in developing end-to-end web applications with .NET 8, embracing both the front-end and back-end aspects of web development. Don't miss this opportunity to explore the future of web UI ",
+          "We'll explore the latest features and enhancements in C# 12, equipping you with the knowledge and tools to leverage them in your projects. Join us to discover the future of C# 12 and learn how to harness its potential to drive innovation and growth.",
         speakers: ["Izzatkhon Shamsiev"],
       },
       {
@@ -247,6 +247,17 @@ export const speakers = [
     isFeatured: true,
     url: "https://www.linkedin.com/in/steven-giesel/",
     username: "steven-giesel",
+  },
+  {
+    id: 12,
+    name: "Vlad",
+    surname: "Ten",
+    img: "/images/speakers/vlad-ten.jpg",
+    position:
+      "YouTube podcast host, Ex Microsoft Software Engineer from Uzbekistan",
+    isFeatured: true,
+    url: "https://www.linkedin.com/in/vladten/",
+    username: "vladten",
   },
 ];
 
