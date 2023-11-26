@@ -10,6 +10,10 @@
   grid-template-columns: repeat(auto-fill, minmax(342px, 1fr));
   gap: 24px;
 }
+.volunteersList[data-state="active"] {
+  min-height: 320px;
+  align-items: flex-start;
+}
 
 .tabsList {
   margin-bottom: 24px;

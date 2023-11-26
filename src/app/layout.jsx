@@ -6,7 +6,6 @@ import Footer from "@/components/footer/footer";
 import Image from "next/image";
 import Script from "next/script";
 import { ToastProvider } from "@/components/toast/toast";
-import { Analytics } from "@vercel/analytics/react";
 
 const inter = Open_Sans({ subsets: ["latin"] });
 const spaceGrotesk = Space_Grotesk({
@@ -78,7 +77,6 @@ export default function RootLayout({ children }) {
           type="text/javascript"
           src={`https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=${process.env.NEXT_PUBLIC_BING_MAPS_KEY}`}
         />
-        <Analytics />
       </body>
     </html>
   );

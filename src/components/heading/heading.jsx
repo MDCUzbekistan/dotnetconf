@@ -5,7 +5,7 @@ function Heading({ level, className, children, ...props }) {
   const Tag = `h${level}`;
 
   return (
-    <Tag className={`${className} ${styles.heading} ${styles[Tag]}`} {...props}>
+    <Tag className={`${styles.heading} ${styles[Tag]} ${className}`} {...props}>
       {children}
     </Tag>
   );
