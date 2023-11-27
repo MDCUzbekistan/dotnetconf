@@ -19,7 +19,6 @@ type ResponseType = {
   city: string;
   role: number;
   expectation: string;
-  createdAt: string;
 };
 
 const spaceMono = Space_Mono({
@@ -34,14 +33,13 @@ const Page = async ({
     invitationId: string;
   };
 }) => {
-  const response = await axios(
-    `${process.env.NEXT_PUBLIC_API_URL}/users/${params.invitationId}`
-  );
-
-  if (!response) {
+  if (params.invitationId.length !== 4) {
     notFound();
   }
 
+  const response = await axios(
+    `${process.env.NEXT_PUBLIC_API_URL}/users/${params.invitationId}`
+  ).catch((err) => notFound());
   const data: ResponseType = response.data;
 
   return (
@@ -90,7 +88,6 @@ const Page = async ({
       <div className={`${styles.ticketWrapper} ${styles.filled}`}>
         <div className={styles.filledContainer}>
           <Ticket
-            createdAt={data.createdAt}
             name={`${data.firstName} ${data.lastName}`}
             id={data.idInString}
           />

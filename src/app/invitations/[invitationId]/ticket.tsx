@@ -6,15 +6,7 @@ import { CalendarIcon, MapPin } from "lucide-react";
 import Image from "next/image";
 import useMediaQuery from "@/hooks/useMediaQuery";
 
-const Ticket = ({
-  name,
-  id,
-  createdAt,
-}: {
-  name: string;
-  id: string;
-  createdAt: string;
-}) => {
+const Ticket = ({ name, id }: { name: string; id: string }) => {
   const prefersLightMode = useMediaQuery("(prefers-color-scheme: light)");
 
   return (
