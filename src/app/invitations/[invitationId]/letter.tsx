@@ -1,8 +1,7 @@
-"use client";
 import React from "react";
 import styles from "./invitations.module.css";
-import Map from "@/components/map";
-import useMediaQuery from "@/hooks/useMediaQuery";
+import Gradient from "@/components/gradient/gradient";
+import Link from "next/link";
 
 const Letter = ({
   firstName,
@@ -11,8 +10,6 @@ const Letter = ({
   firstName: string;
   lastName: string;
 }) => {
-  const prefersLightMode = useMediaQuery("(prefers-color-scheme: light)");
-
   return (
     <div className={`${styles.letterWrapper} ${styles.filled}`}>
       <div className={styles.filledContainer}>
@@ -31,22 +28,24 @@ const Letter = ({
           in technology. <br /> <br />
           <strong>Date: December 2, 2023</strong> <br />
           <strong>Time: 10:00 AM</strong> <br />
-          <strong>Location: New Uzbekistan University. </strong> <br /> <br />
+          <strong>
+            Location: New Uzbekistan University.{" "}
+            <Gradient>
+              <Link
+                target="_blank"
+                href="https://www.bing.com/maps?osid=89e0c372-d521-420e-82a3-9841d4a1a9be&cp=41.316043~69.293159&lvl=17.23&pi=0&v=2&sV=2&form=S00027"
+              >
+                See in the map!
+              </Link>
+            </Gradient>
+          </strong>{" "}
+          <br /> <br />
           We are looking forward to the possibility of your participation in
           what promises to be a highly engaging and insightful event. <br />{" "}
           <br />
           Warm regards, <br />
           MDC Uzbekistan Team
-          <br /> <br />
         </p>
-        <Map
-          mode={prefersLightMode ? "light" : "dark"}
-          style={{
-            height: 540,
-            overflow: "hidden",
-            borderRadius: 12,
-          }}
-        />
       </div>
     </div>
   );
