@@ -5,8 +5,10 @@ import Link from "next/link";
 import Gradient from "../gradient/gradient";
 import { Menu } from "lucide-react";
 import { headerLinks } from "@/data";
+import { usePathname } from "next/navigation";
 
 function Header() {
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   React.useEffect(() => {
@@ -38,6 +40,10 @@ function Header() {
       window.addEventListener("scroll", handleWindowScroll);
     };
   }, [isMenuOpen]);
+
+  if (pathname.includes("/invitations")) {
+    return;
+  }
 
   return (
     <header className={styles.wrapper}>
