@@ -24,6 +24,11 @@ const tabs = [
     title: "Design Team",
     slug: "design-team",
   },
+  {
+    id: 4,
+    title: "Community volunteers",
+    slug: "community-volunteers",
+  },
 ];
 
 const tabsContent = [
@@ -38,6 +43,10 @@ const tabsContent = [
   {
     id: 4,
     slug: "design-team",
+  },
+  {
+    id: 5,
+    slug: "community-volunteers",
   },
 ];
 
