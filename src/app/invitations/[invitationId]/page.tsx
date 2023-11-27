@@ -6,6 +6,7 @@ import { Space_Mono } from "next/font/google";
 import Ticket from "./ticket";
 import axios from "axios";
 import { notFound } from "next/navigation";
+import Letter from "./letter";
 
 type ResponseType = {
   id: number;
@@ -58,33 +59,7 @@ const Page = async ({
           alt="hero graphic"
         />
       </div>
-      <div className={`${styles.letterWrapper} ${styles.filled}`}>
-        <div className={styles.filledContainer}>
-          <p className={styles.letter}>
-            <strong>
-              Dear {data.firstName} {data.lastName},
-            </strong>{" "}
-            <br /> <br />
-            On behalf of the Microsoft Developers Community in Uzbekistan, we
-            are honored to extend to you an exclusive invitation to the First
-            In-Person Microsoft Community Conference in Uzbekistan. <br />{" "}
-            <br />
-            This conference is designed to bring together a diverse group of
-            Microsoft product users and developers, fostering a community of
-            innovation and collaboration. It is a prime opportunity to engage
-            with industry leaders, share insights, and explore the latest
-            advancements in technology. <br /> <br />
-            <strong>Date: December 2, 2023</strong> <br />
-            <strong>Time: 10:00 AM</strong> <br />
-            <strong>Location: New Uzbekistan University</strong> <br /> <br />
-            We are looking forward to the possibility of your participation in
-            what promises to be a highly engaging and insightful event. <br />{" "}
-            <br />
-            Warm regards, <br />
-            MDC Uzbekistan Team
-          </p>
-        </div>
-      </div>
+      <Letter firstName={data.firstName} lastName={data.lastName} />
       <div className={`${styles.ticketWrapper} ${styles.filled}`}>
         <div className={styles.filledContainer}>
           <Ticket
