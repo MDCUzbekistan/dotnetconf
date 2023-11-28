@@ -820,6 +820,13 @@ export const volunteers = [
   },
   {
     id: 41,
+    fullName: "Abror Musulmonov",
+    team: "community-volunteers",
+    media: "http://www.linkedin.com/in/abrormusulmonov/",
+    username: "abrormusulmonov",
+  },
+  {
+    id: 42,
     fullName: "Nurbek Erkinov",
     team: "community-volunteers",
     media: "https://www.linkedin.com/in/nurbek-erkinov-01185a234",
