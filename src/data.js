@@ -758,7 +758,7 @@ export const volunteers = [
   {
     id: 32,
     fullName: "Muhammad Abdulloh Komilov",
-    team: "community-volunteers",
+    team: "docs-team",
     media: "https://www.linkedin.com/in/muhammadabdulloh/",
     username: "muhammadabdulloh",
   },
