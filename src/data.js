@@ -8,6 +8,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "9:00",
         timeTo: "10:00",
+        timezoneOffset: "GMT+5",
         title: "Registration",
         description:
           "The formal arrangement made by individuals to secure their place at our conference, ensuring that they have access to the full range of conference offerings.",
@@ -17,6 +18,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "10:00",
         timeTo: "10:10",
+        timezoneOffset: "GMT+5",
         title: "Opening Ceremony",
         description:
           "This event is your gateway to unlocking the full potential of Microsoft technologies, fostering collaboration, and driving innovation. Get ready for a transformative experience that will empower you to lead in the ever-evolving world of technology",
@@ -26,6 +28,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "10:10",
         timeTo: "10:20",
+        timezoneOffset: "GMT+5",
         title: "Introducing MDC",
         description:
           "We'll introduce the Microsoft developers community in Uzbekistan, highlighting the benefits of joining our community and the opportunities it provides. Join us to learn how you can leverage our community to drive innovation and growth.",
@@ -35,6 +38,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "10:20",
         timeTo: "10:50",
+        timezoneOffset: "GMT+5",
         title: "Scoring goals together: leadership and teamwork",
         description:
           "This encapsulates the journey we'll explore at our conference. We'll delve into not just the technical aspects but also the leadership and teamwork skills needed to excel in the dynamic world of technology. Join us as we navigate this transformative path together, from mastering code to becoming leaders in our field.",
@@ -44,6 +48,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "10:50",
         timeTo: "11:10",
+        timezoneOffset: "GMT+5",
         title: "The Journey from Tashkent to Microsoft",
         description:
           "In this lecture, the speaker shares their journey from Tashkent to securing a job at Microsoft. Attendees will gain insights into the speaker's experience, learning about the steps, challenges, and strategies that led to their successful employment at Microsoft. The focus is on providing guidance and inspiration for those aspiring to pursue a career at Microsoft or similar tech companies.",
@@ -53,6 +58,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "11:10",
         timeTo: "11:25",
+        timezoneOffset: "GMT+5",
         title: "Break",
         description: "Interactive games",
         speakers: [],
@@ -61,6 +67,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "11:25",
         timeTo: "11:40",
+        timezoneOffset: "GMT+5",
         title: "Microsoft Community Leader Programs Overview",
         description:
           "We'll delve into strategies to propel your career and organizations forward through the adoption of Microsoft solutions. With a focus on promotion and growth, we aim to empower you to embrace innovation and thrive in the digital age",
@@ -70,6 +77,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "11:40",
         timeTo: "12:00",
+        timezoneOffset: "GMT+5",
         title: "Social Engineering and Cybersecurity Awareness",
         description:
           "Critical topic, we'll address at our conference. We'll equip you with the knowledge and tools to defend against social engineering attacks while fostering a culture of cybersecurity awareness. Join us to learn how to safeguard your digital presence and protect your organization from evolving security threats.",
@@ -79,6 +87,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "12:00",
         timeTo: "14:00",
+        timezoneOffset: "GMT+5",
         title: "Lunch break / Networking",
         description:
           "Take the opportunity to refuel both your body and your professional network. Connect with fellow attendees, engage in meaningful conversations, and build lasting relationships in a relaxed and social setting. Enjoy your meal and make the most of this valuable networking time",
@@ -88,6 +97,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "14:00",
         timeTo: "14:10",
+        timezoneOffset: "GMT+5",
         title: "Video break",
         description: "",
         speakers: [],
@@ -96,6 +106,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "14:10",
         timeTo: "14:30",
+        timezoneOffset: "GMT+5",
         title: "Welcome to .NET 8",
         description:
           "This marks the beginning of an exciting journey into the latest advancements and capabilities in the .NET ecosystem. Join us as we explore the innovations, enhancements, and opportunities that .NET 8 has to offer",
@@ -105,6 +116,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "14:30",
         timeTo: "14:50",
+        timezoneOffset: "GMT+5",
         title: "Modern patterns in systems design and architecture",
         description:
           "We'll explore the latest trends and patterns in systems design and architecture, equipping you with the knowledge and tools to build scalable, resilient, and highly available systems. Join us to discover the future of systems design and architecture, and learn how to leverage it to drive innovation and growth.",
@@ -114,6 +126,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "14:50",
         timeTo: "15:05",
+        timezoneOffset: "GMT+5",
         title: "Break",
         description: "Interactive games",
         speakers: [],
@@ -122,6 +135,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "15:05",
         timeTo: "15:25",
+        timezoneOffset: "GMT+5",
         title:
           "Performance Improvements in .NET 8, ASP.NET Core, and .NET MAUI",
         description:
@@ -132,6 +146,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "15:25",
         timeTo: "15:45",
+        timezoneOffset: "GMT+5",
         title: "First look at .NET Aspire: Building cloud-ready applications",
         description:
           ".NET Aspire is a new cloud-native application framework that enables developers to build cloud-ready applications. Join us to explore the capabilities of this new framework and learn how to leverage it to build scalable, resilient, and highly available cloud applications. Don't miss this opportunity to get a first look at .NET Aspire and its potential in the cloud ecosystem.",
@@ -141,6 +156,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "15:45",
         timeTo: "16:05",
+        timezoneOffset: "GMT+5",
         title: "What's new in C# 12",
         description:
           "We'll explore the latest features and enhancements in C# 12, equipping you with the knowledge and tools to leverage them in your projects. Join us to discover the future of C# 12 and learn how to harness its potential to drive innovation and growth.",
@@ -150,6 +166,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "16:05",
         timeTo: "16:25",
+        timezoneOffset: "GMT+5",
         title: "Exploring Blazor's Features in .NET 8",
         description:
           "It provides an overview of the advanced capabilities of the Blazor web framework within the .NET 8 environment. Participants will learn about features like server-side and client-side hosting, a component-based architecture, and seamless integration with .NET libraries, enabling them to build dynamic web applications using C# and .NET.",
@@ -159,6 +176,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "16:25",
         timeTo: "16:45",
+        timezoneOffset: "GMT+5",
         title:
           "Azure Kubernetes Service: Your First Steps to Cloud Native Success",
         description:
@@ -169,6 +187,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "16:45",
         timeTo: "17:00",
+        timezoneOffset: "GMT+5",
         title: "The Evolution of AI in the Cloud Ecosystem",
         description:
           "Focal point of discussion at our conference, We'll delve into the remarkable journey of artificial intelligence within cloud environments, exploring its impact on industries and innovation. Join us to witness the latest advancements, applications, and strategies that are shaping the future of AI in the cloud ecosystem.",
@@ -178,6 +197,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "17:00",
         timeTo: "17:10",
+        timezoneOffset: "GMT+5",
         title: "Closing Ceremony",
         description: "",
         speakers: [],
@@ -186,6 +206,7 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "17:00",
         timeTo: "18:00",
+        timezoneOffset: "GMT+5",
         title: "Disco Party",
         description: "",
         speakers: [],
