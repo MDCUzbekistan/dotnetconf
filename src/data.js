@@ -188,9 +188,9 @@ export const agenda = [
         timeFrom: "16:45",
         timeTo: "17:00",
         timezoneOffset: "GMT+5",
-        title: "The Evolution of AI in the Cloud Ecosystem",
+        title: "Live Data, Smarter AI",
         description:
-          "Focal point of discussion at our conference, We'll delve into the remarkable journey of artificial intelligence within cloud environments, exploring its impact on industries and innovation. Join us to witness the latest advancements, applications, and strategies that are shaping the future of AI in the cloud ecosystem.",
+          "Real-time AI app needs streaming data to respond with the most up-to-date information to user queries or perform quick actions autonomously. To achieve this, you need to build a real-time data pipeline. In this talk, we will discover how to construct an LLM-powered full-stack app sidestepping complex and fragmented typical LLM stacks such as vector databases, additional frameworks, or cache services. You will learn how to use open-source projects efficiently in Python to facilitate real-time in-memory data indexing, pulling directly from compatible storage.",
         speakers: ["Bobur Umurzokov"],
       },
       {
