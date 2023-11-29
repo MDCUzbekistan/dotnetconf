@@ -5,7 +5,7 @@ export const agenda = [
     subtitle: "",
     sessions: [
       {
-        id: 1,
+        id: Math.random(),
         timeFrom: "9:00",
         timeTo: "10:00",
         title: "Registration",
@@ -14,26 +14,34 @@ export const agenda = [
         speakers: [],
       },
       {
-        id: 2,
+        id: Math.random(),
         timeFrom: "10:00",
-        timeTo: "10:20",
-        title: "Opening speech",
+        timeTo: "10:10",
+        title: "Opening Ceremony",
         description:
-          "This event is your gateway to unlocking the full potential of Microsoft technologies, fostering collaboration, and driving innovation. Get ready for a transformative experience that will empower you to lead in the ever-evolving world of technology.",
+          "This event is your gateway to unlocking the full potential of Microsoft technologies, fostering collaboration, and driving innovation. Get ready for a transformative experience that will empower you to lead in the ever-evolving world of technology",
         speakers: [],
       },
       {
-        id: 3,
+        id: Math.random(),
+        timeFrom: "10:10",
+        timeTo: "10:20",
+        title: "Intro for First session",
+        description: "Welcoming and starting first session",
+        speakers: ["Mukhammadkarim Tukhtaboev"],
+      },
+      {
+        id: Math.random(),
         timeFrom: "10:20",
-        timeTo: "10:40",
+        timeTo: "10:30",
         title: "Microsoft Community Leader Programs Overview",
         description:
           "We'll delve into strategies to propel your career and organizations forward through the adoption of Microsoft solutions. With a focus on promotion and growth, we aim to empower you to embrace innovation and thrive in the digital age",
         speakers: ["Martin Tatar"],
       },
       {
-        id: 4,
-        timeFrom: "10:40",
+        id: Math.random(),
+        timeFrom: "10:30",
         timeTo: "11:00",
         title: "Scoring goals together: leadership and teamwork",
         description:
@@ -41,44 +49,51 @@ export const agenda = [
         speakers: ["Djakhongir Makhkamov"],
       },
       {
-        id: 5,
+        id: Math.random(),
         timeFrom: "11:00",
-        timeTo: "11:20",
-        title: "Modern patterns in systems design and architecture",
-        description:
-          " We'll explore the latest trends and patterns in systems design and architecture, equipping you with the knowledge and tools to build scalable, resilient, and highly available systems. Join us to discover the future of systems design and architecture, and learn how to leverage it to drive innovation and growth.",
-        speakers: ["Hassan Habib"],
+        timeTo: "11:15",
+        title: "Break",
+        description: "Interactive games",
+        speakers: [],
       },
       {
-        id: 6,
-        timeFrom: "11:20",
-        timeTo: "11:40",
+        id: Math.random(),
+        timeFrom: "11:15",
+        timeTo: "11:35",
+        title: "The Journey from Tashkent to Microsoft",
+        description:
+          "In this lecture, the speaker shares their journey from Tashkent to securing a job at Microsoft. Attendees will gain insights into the speaker's experience, learning about the steps, challenges, and strategies that led to their successful employment at Microsoft. The focus is on providing guidance and inspiration for those aspiring to pursue a career at Microsoft or similar tech companies.",
+        speakers: ["Vlad Ten"],
+      },
+      {
+        id: Math.random(),
+        timeFrom: "11:35",
+        timeTo: "12:00",
         title: "Social Engineering and Cybersecurity Awareness",
         description:
           "Critical topic, we'll address at our conference. We'll equip you with the knowledge and tools to defend against social engineering attacks while fostering a culture of cybersecurity awareness. Join us to learn how to safeguard your digital presence and protect your organization from evolving security threats.",
         speakers: ["Saud Abdulwahed"],
       },
       {
-        id: 7,
-        timeFrom: "11:40",
-        timeTo: "12:00",
-        title: "The Evolution of AI in the Cloud Ecosystem",
-        description:
-          "Focal point of discussion at our conference, We'll delve into the remarkable journey of artificial intelligence within cloud environments, exploring its impact on industries and innovation. Join us to witness the latest advancements, applications, and strategies that are shaping the future of AI in the cloud ecosystem.",
-        speakers: ["Bobur Umurzokov"],
-      },
-      {
-        id: 8,
+        id: Math.random(),
         timeFrom: "12:00",
-        timeTo: "13:00",
+        timeTo: "14:00",
         title: "Lunch break / Networking",
         description:
           "Take the opportunity to refuel both your body and your professional network. Connect with fellow attendees, engage in meaningful conversations, and build lasting relationships in a relaxed and social setting. Enjoy your meal and make the most of this valuable networking time",
-        speakers: [""],
+        speakers: [],
       },
       {
-        id: 9,
-        timeFrom: "13:00",
+        id: Math.random(),
+        timeFrom: "14:00",
+        timeTo: "14:10",
+        title: "Video break",
+        description: "",
+        speakers: [],
+      },
+      {
+        id: Math.random(),
+        timeFrom: "14:10",
         timeTo: "14:30",
         title: "Welcome to .NET 8",
         description:
@@ -86,18 +101,26 @@ export const agenda = [
         speakers: ["Nozim Turakulov"],
       },
       {
-        id: 10,
+        id: Math.random(),
         timeFrom: "14:30",
-        timeTo: "15:00",
-        title: "What's new in C# 12",
+        timeTo: "14:50",
+        title: "Modern patterns in systems design and architecture",
         description:
-          "We'll explore the latest features and enhancements in C# 12, equipping you with the knowledge and tools to leverage them in your projects. Join us to discover the future of C# 12 and learn how to harness its potential to drive innovation and growth.",
-        speakers: ["Izzatkhon Shamsiev"],
+          "We'll explore the latest trends and patterns in systems design and architecture, equipping you with the knowledge and tools to build scalable, resilient, and highly available systems. Join us to discover the future of systems design and architecture, and learn how to leverage it to drive innovation and growth.",
+        speakers: ["Hassan Habib"],
       },
       {
-        id: 11,
-        timeFrom: "15:00",
-        timeTo: "15:30",
+        id: Math.random(),
+        timeFrom: "14:50",
+        timeTo: "15:05",
+        title: "Break",
+        description: "Interactive games",
+        speakers: [],
+      },
+      {
+        id: Math.random(),
+        timeFrom: "15:05",
+        timeTo: "15:25",
         title:
           "Performance Improvements in .NET 8, ASP.NET Core, and .NET MAUI",
         description:
@@ -105,9 +128,36 @@ export const agenda = [
         speakers: ["Oybek Jumaniyozov"],
       },
       {
-        id: 12,
-        timeFrom: "15:30",
-        timeTo: "16:00",
+        id: Math.random(),
+        timeFrom: "15:25",
+        timeTo: "15:45",
+        title: "First look at .NET Aspire: Building cloud-ready applications",
+        description:
+          ".NET Aspire is a new cloud-native application framework that enables developers to build cloud-ready applications. Join us to explore the capabilities of this new framework and learn how to leverage it to build scalable, resilient, and highly available cloud applications. Don't miss this opportunity to get a first look at .NET Aspire and its potential in the cloud ecosystem.",
+        speakers: ["Milan Jovanović"],
+      },
+      {
+        id: Math.random(),
+        timeFrom: "15:45",
+        timeTo: "16:05",
+        title: "What's new in C# 12",
+        description:
+          "We'll explore the latest features and enhancements in C# 12, equipping you with the knowledge and tools to leverage them in your projects. Join us to discover the future of C# 12 and learn how to harness its potential to drive innovation and growth.",
+        speakers: ["Izzatkhon Shamsiev"],
+      },
+      {
+        id: Math.random(),
+        timeFrom: "16:05",
+        timeTo: "16:25",
+        title: "Exploring Blazor's Features in .NET 8",
+        description:
+          "It provides an overview of the advanced capabilities of the Blazor web framework within the .NET 8 environment. Participants will learn about features like server-side and client-side hosting, a component-based architecture, and seamless integration with .NET libraries, enabling them to build dynamic web applications using C# and .NET.",
+        speakers: ["Steven Giesel"],
+      },
+      {
+        id: Math.random(),
+        timeFrom: "16:25",
+        timeTo: "16:45",
         title:
           "Azure Kubernetes Service: Your First Steps to Cloud Native Success",
         description:
@@ -115,21 +165,20 @@ export const agenda = [
         speakers: ["Doniyor Niyozov"],
       },
       {
-        id: 13,
-        timeFrom: "16:00",
-        timeTo: "16:30",
-        title: "First look at .NET Aspire: Building cloud-ready applications",
-        description:
-          " .NET Aspire is a new cloud-native application framework that enables developers to build cloud-ready applications. Join us to explore the capabilities of this new framework and learn how to leverage it to build scalable, resilient, and highly available cloud applications. Don't miss this opportunity to get a first look at .NET Aspire and its potential in the cloud ecosystem.",
-        speakers: ["Milan Jovanović"],
-      },
-      {
-        id: 14,
-        timeFrom: "16:30",
-        timeTo: "18:00",
-        title: "Closing Session",
+        id: Math.random(),
+        timeFrom: "16:45",
+        timeTo: "17:00",
+        title: "Closing tech. Session",
         description:
           "We'll conclude our conference with gratitude and reflection. It's the time to recap key takeaways, express appreciation to our speakers and attendees, and look ahead to the future of technology and innovation. Thank you for being a part of this incredible journey, and let's close our conference on a high note.",
+        speakers: ["Bobur Umurzokov"],
+      },
+      {
+        id: Math.random(),
+        timeFrom: "17:00",
+        timeTo: "18:00",
+        title: "Disco Party",
+        description: "",
         speakers: [],
       },
     ],
