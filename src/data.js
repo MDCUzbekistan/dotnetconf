@@ -26,23 +26,15 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "10:10",
         timeTo: "10:20",
-        title: "Intro for First session",
-        description: "Welcoming and starting first session",
+        title: "Introducing MDC",
+        description:
+          "We'll introduce the Microsoft developers community in Uzbekistan, highlighting the benefits of joining our community and the opportunities it provides. Join us to learn how you can leverage our community to drive innovation and growth.",
         speakers: ["Mukhammadkarim Tukhtaboev"],
       },
       {
         id: Math.random(),
         timeFrom: "10:20",
-        timeTo: "10:30",
-        title: "Microsoft Community Leader Programs Overview",
-        description:
-          "We'll delve into strategies to propel your career and organizations forward through the adoption of Microsoft solutions. With a focus on promotion and growth, we aim to empower you to embrace innovation and thrive in the digital age",
-        speakers: ["Martin Tatar"],
-      },
-      {
-        id: Math.random(),
-        timeFrom: "10:30",
-        timeTo: "11:00",
+        timeTo: "10:50",
         title: "Scoring goals together: leadership and teamwork",
         description:
           "This encapsulates the journey we'll explore at our conference. We'll delve into not just the technical aspects but also the leadership and teamwork skills needed to excel in the dynamic world of technology. Join us as we navigate this transformative path together, from mastering code to becoming leaders in our field.",
@@ -50,16 +42,8 @@ export const agenda = [
       },
       {
         id: Math.random(),
-        timeFrom: "11:00",
-        timeTo: "11:15",
-        title: "Break",
-        description: "Interactive games",
-        speakers: [],
-      },
-      {
-        id: Math.random(),
-        timeFrom: "11:15",
-        timeTo: "11:35",
+        timeFrom: "10:50",
+        timeTo: "11:10",
         title: "The Journey from Tashkent to Microsoft",
         description:
           "In this lecture, the speaker shares their journey from Tashkent to securing a job at Microsoft. Attendees will gain insights into the speaker's experience, learning about the steps, challenges, and strategies that led to their successful employment at Microsoft. The focus is on providing guidance and inspiration for those aspiring to pursue a career at Microsoft or similar tech companies.",
@@ -67,7 +51,24 @@ export const agenda = [
       },
       {
         id: Math.random(),
-        timeFrom: "11:35",
+        timeFrom: "11:10",
+        timeTo: "11:25",
+        title: "Break",
+        description: "Interactive games",
+        speakers: [],
+      },
+      {
+        id: Math.random(),
+        timeFrom: "11:25",
+        timeTo: "11:40",
+        title: "Microsoft Community Leader Programs Overview",
+        description:
+          "We'll delve into strategies to propel your career and organizations forward through the adoption of Microsoft solutions. With a focus on promotion and growth, we aim to empower you to embrace innovation and thrive in the digital age",
+        speakers: ["Martin Tatar"],
+      },
+      {
+        id: Math.random(),
+        timeFrom: "11:40",
         timeTo: "12:00",
         title: "Social Engineering and Cybersecurity Awareness",
         description:
@@ -168,10 +169,18 @@ export const agenda = [
         id: Math.random(),
         timeFrom: "16:45",
         timeTo: "17:00",
-        title: "Closing tech. Session",
+        title: "The Evolution of AI in the Cloud Ecosystem",
         description:
-          "We'll conclude our conference with gratitude and reflection. It's the time to recap key takeaways, express appreciation to our speakers and attendees, and look ahead to the future of technology and innovation. Thank you for being a part of this incredible journey, and let's close our conference on a high note.",
+          "Focal point of discussion at our conference, We'll delve into the remarkable journey of artificial intelligence within cloud environments, exploring its impact on industries and innovation. Join us to witness the latest advancements, applications, and strategies that are shaping the future of AI in the cloud ecosystem.",
         speakers: ["Bobur Umurzokov"],
+      },
+      {
+        id: Math.random(),
+        timeFrom: "17:00",
+        timeTo: "17:10",
+        title: "Closing Ceremony",
+        description: "",
+        speakers: [],
       },
       {
         id: Math.random(),
