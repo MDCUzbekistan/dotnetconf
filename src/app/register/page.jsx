@@ -27,14 +27,13 @@ const Page = () => {
   });
 
   React.useEffect(() => {
-    if (state.message) {
-      openToast({
-        status: "error",
-        title: state.message,
-      });
-    }
-
     if (!state.success) {
+      if (state.message) {
+        openToast({
+          status: "error",
+          title: state.message,
+        });
+      }
       return;
     }
 
