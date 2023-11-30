@@ -72,7 +72,7 @@ export async function register(
 
     return {
       success: true,
-      message: `Successfully registered!`,
+      message: `You have been registered successfully. You will receive an email with further instructions later.`,
     };
   } catch (error: any) {
     return {
