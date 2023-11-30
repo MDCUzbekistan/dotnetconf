@@ -150,7 +150,7 @@ export const agenda = [
         title: "First look at .NET Aspire: Building cloud-ready applications",
         description:
           ".NET Aspire is a new cloud-native application framework that enables developers to build cloud-ready applications. Join us to explore the capabilities of this new framework and learn how to leverage it to build scalable, resilient, and highly available cloud applications. Don't miss this opportunity to get a first look at .NET Aspire and its potential in the cloud ecosystem.",
-        speakers: ["Milan Jovanović"],
+        speakers: ["Alexander Trofimenko"],
       },
       {
         id: Math.random(),
@@ -257,16 +257,6 @@ export const speakers = [
     username: "boburumurzokov",
   },
   {
-    id: 5,
-    name: "Milan",
-    surname: "Jovanović",
-    img: "/images/speakers/milan-jovanovic.jpg",
-    position: "Microsoft MVP",
-    isFeatured: true,
-    url: "https://www.linkedin.com/in/milan-jovanovic/",
-    username: "milan-jovanovic",
-  },
-  {
     id: 6,
     name: "Doniyor",
     surname: "Niazov",
@@ -337,6 +327,16 @@ export const speakers = [
     isFeatured: true,
     url: "https://www.linkedin.com/in/vladten/",
     username: "vladten",
+  },
+  {
+    id: 13,
+    name: "Alexander",
+    surname: "Trofimenko",
+    img: "/images/speakers/aliaksandr-trafimenka.jpg",
+    position: "Senior Engineering Manager",
+    isFeatured: true,
+    url: "https://www.linkedin.com/in/alexander-trofimenko-91a83964/",
+    username: "alexander-trofimenko",
   },
 ];
 
