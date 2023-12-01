@@ -25,7 +25,7 @@ const Ticket = ({ name, id }: { name: string; id: string }) => {
           </p>
           <p className={styles.ticketRightCard}>
             <CalendarIcon size={16} />
-            Dec 2, 2023, 10:00 AM
+            Dec 2, 2023, 9:00 AM
           </p>
           <div className={styles.ticketIssueCards}>
             <div className={styles.ticketIssueCard}>
