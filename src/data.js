@@ -86,6 +86,16 @@ export const agenda = [
       {
         id: Math.random(),
         timeFrom: "12:00",
+        timeTo: "12:15",
+        timezoneOffset: "GMT+5",
+        title: "Swift Launch - A new kind of Incubator for Uzbekistan",
+        description:
+          "Its mission is to fuel the dreams of Uzbek students and catalyze the emerging startup ecosystem. Join us to learn how Swift Launch can help you turn your ideas into reality and drive innovation and growth in Uzbekistan.",
+        speakers: ["Stephen Lin"],
+      },
+      {
+        id: Math.random(),
+        timeFrom: "12:15",
         timeTo: "14:00",
         timezoneOffset: "GMT+5",
         title: "Lunch break / Networking",
@@ -337,6 +347,16 @@ export const speakers = [
     isFeatured: true,
     url: "https://www.linkedin.com/in/alexander-trofimenko-91a83964/",
     username: "alexander-trofimenko",
+  },
+  {
+    id: 14,
+    name: "Stephen",
+    surname: "Lin",
+    img: "/images/speakers/stephen-lin.jpg",
+    position: "Founder of Swift Launch",
+    isFeatured: true,
+    url: "https://www.linkedin.com/in/linstephen/",
+    username: "linstephen",
   },
 ];
 
@@ -910,6 +930,13 @@ export const volunteers = [
     team: "community-volunteers",
     media: "https://www.linkedin.com/in/nurbek-erkinov-01185a234",
     username: "nurbek-erkinov",
+  },
+  {
+    id: 43,
+    fullName: "Xondamir Eshboyev",
+    team: "design-team",
+    media: "https://instagram.com/_.xondamir",
+    username: "_.xondamir",
   },
 ];
 

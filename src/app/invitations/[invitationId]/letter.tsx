@@ -27,7 +27,7 @@ const Letter = ({
           industry leaders, share insights, and explore the latest advancements
           in technology. <br /> <br />
           <strong>Date: December 2, 2023</strong> <br />
-          <strong>Time: 10:00 AM</strong> <br />
+          <strong>Time: 9:00 AM</strong> <br />
           <strong>
             Location: New Uzbekistan University.{" "}
             <Gradient>
