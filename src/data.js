@@ -594,6 +594,14 @@ export const organizers = [
     username: "ozodakhon",
   },
   {
+    id: 231,
+    name: "Samandar",
+    surname: "Uralov",
+    img: "/images/core-team/samandar-uralov.jpg",
+    url: "https://www.linkedin.com/in/samandar-uralov/",
+    username: "samandar-uralov",
+  },
+  {
     id: 7,
     name: "Mokhira",
     surname: "Kodirova",
