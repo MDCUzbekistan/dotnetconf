@@ -28,7 +28,6 @@ const Page = () => {
                   {item.name} {item.surname}
                 </p>
               </Gradient>
-              <p className={styles.cardBio}>{item.bio}</p>
               <a className={styles.cardLink} href={item.url} target="_blank">
                 @{item.username}{" "}
                 <ArrowRight className={styles.arrow} size={16} />

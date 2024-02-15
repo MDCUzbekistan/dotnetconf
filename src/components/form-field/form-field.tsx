@@ -4,9 +4,23 @@ import * as CheckboxPrimitives from "@radix-ui/react-checkbox";
 import * as SelectPrimitives from "@radix-ui/react-select";
 import { Check, ChevronDown, ChevronUp } from "lucide-react";
 
-const FormFieldContext = React.createContext();
+const FormFieldContext = React.createContext({
+  id: "",
+});
 
-function FormField({ label, required, errorMessage, children }) {
+interface FormFieldProps {
+  label: string;
+  required?: boolean;
+  errorMessage?: string[];
+  children: React.ReactNode;
+}
+
+function FormField({
+  label,
+  required,
+  errorMessage,
+  children,
+}: FormFieldProps) {
   const id = React.useId();
 
   return (
@@ -22,14 +36,24 @@ function FormField({ label, required, errorMessage, children }) {
   );
 }
 
-function Input({ className, ...props }) {
+interface InputProps extends React.ComponentPropsWithoutRef<"input"> {
+  className?: string;
+}
+
+function Input({ className, ...props }: InputProps) {
   const { id } = React.useContext(FormFieldContext);
   return (
     <input id={id} className={`${className} ${styles.input}`} {...props} />
   );
 }
 
-function Checkbox({ label, className, ...props }) {
+interface CheckboxProps
+  extends React.ComponentPropsWithoutRef<typeof CheckboxPrimitives.Root> {
+  label: string;
+  className?: string;
+}
+
+function Checkbox({ label, className, ...props }: CheckboxProps) {
   const checkboxId = React.useId();
 
   return (
@@ -50,11 +74,18 @@ function Checkbox({ label, className, ...props }) {
   );
 }
 
-function Select({ className, placeholder, children, ...props }) {
+interface SelectProps
+  extends React.ComponentPropsWithoutRef<typeof SelectPrimitives.Root> {
+  placeholder?: string;
+  children: React.ReactNode;
+  className?: string;
+}
+
+function Select({ className, placeholder, children, ...props }: SelectProps) {
   const { id } = React.useContext(FormFieldContext);
 
   return (
-    <SelectPrimitives.Root className={className} {...props}>
+    <SelectPrimitives.Root {...props}>
       <SelectPrimitives.Trigger id={id} className={styles.selectTrigger}>
         <SelectPrimitives.Value placeholder={placeholder} />
         <SelectPrimitives.Icon className={styles.selectIcon}>
@@ -76,7 +107,13 @@ function Select({ className, placeholder, children, ...props }) {
   );
 }
 
-function SelectItem({ className, children, ...props }) {
+interface SelectItemProps
+  extends React.ComponentPropsWithoutRef<typeof SelectPrimitives.Item> {
+  className?: string;
+  children: React.ReactNode;
+}
+
+function SelectItem({ className, children, ...props }: SelectItemProps) {
   return (
     <SelectPrimitives.Item
       className={`${className} ${styles.selectItem}`}

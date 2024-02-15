@@ -4,7 +4,12 @@ import Button from "../button";
 import styles from "./submit.module.css";
 import { Loader } from "lucide-react";
 
-function Submit({ children, className, ...props }) {
+interface Props extends React.ComponentPropsWithoutRef<typeof Button> {
+  children: React.ReactNode;
+  className?: string;
+}
+
+function Submit({ children, className, ...props }: Props) {
   const { pending } = useFormStatus();
 
   return (

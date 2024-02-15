@@ -16,8 +16,10 @@ function Header() {
       return;
     }
 
-    const handleWindowClick = (e) => {
-      if (e.target.closest(`.${styles.burger}`)) {
+    const handleWindowClick = (e: React.MouseEvent) => {
+      const target = e.target as HTMLElement;
+
+      if (target.closest(`.${styles.burger}`)) {
         return;
       }
 
@@ -32,11 +34,18 @@ function Header() {
       setIsMenuOpen(false);
     };
 
-    window.addEventListener("click", handleWindowClick);
+    // FIXME: make type-safe
+    window.addEventListener(
+      "click",
+      handleWindowClick as unknown as EventListener
+    );
     window.addEventListener("scroll", handleWindowScroll);
 
     return () => {
-      window.removeEventListener("click", handleWindowClick);
+      window.removeEventListener(
+        "click",
+        handleWindowClick as unknown as EventListener
+      );
       window.addEventListener("scroll", handleWindowScroll);
     };
   }, [isMenuOpen]);

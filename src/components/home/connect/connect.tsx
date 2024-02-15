@@ -1,14 +1,9 @@
-"use client";
 import React from "react";
 import styles from "./connect.module.css";
 import Heading from "@/components/heading";
 import Gradient from "@/components/gradient";
-import useMediaQuery from "@/hooks/useMediaQuery";
-import Map from "@/components/map";
 
 function Connect() {
-  const prefersLightMode = useMediaQuery("(prefers-color-scheme: light)");
-
   return (
     <>
       <section className={styles.wrapper}>
@@ -39,14 +34,6 @@ function Connect() {
           </Gradient>
         </p>
       </section>
-      <Map
-        mode={prefersLightMode ? "light" : "dark"}
-        style={{
-          height: 540,
-          overflow: "hidden",
-          borderRadius: 12,
-        }}
-      />
     </>
   );
 }

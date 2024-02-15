@@ -19,7 +19,11 @@ export const metadata = {
     "Join the Microsoft Community Conf 2023 Uzbekistan free event in December 2 to learn about the newest developments across the .NET platform, open source, and dev tools.",
 };
 
-export default function RootLayout({ children }) {
+interface Props {
+  children: React.ReactNode;
+}
+
+export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <body className={`${inter.className} ${spaceGrotesk.variable}`}>

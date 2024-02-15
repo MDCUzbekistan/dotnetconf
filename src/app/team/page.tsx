@@ -8,7 +8,13 @@ import { ArrowRight } from "lucide-react";
 import { organizers, volunteers } from "@/data";
 import Tabs from "@/components/tabs";
 
-const tabs = [
+interface TabProps {
+  id: number;
+  title: string;
+  slug: string;
+}
+
+const tabs: TabProps[] = [
   {
     id: 1,
     title: "Docs team",
@@ -72,7 +78,6 @@ const Page = () => {
                   {item.name} {item.surname}
                 </p>
               </Gradient>
-              <p className={styles.cardBio}>{item.bio}</p>
               <a className={styles.cardLink} href={item.url} target="_blank">
                 @{item.username}{" "}
                 <ArrowRight className={styles.arrow} size={16} />
@@ -109,7 +114,6 @@ const Page = () => {
                       <Gradient gradientVariant="primary">
                         <p className={styles.cardName}>{item.fullName}</p>
                       </Gradient>
-                      <p className={styles.cardBio}>{item.bio}</p>
                       <a
                         className={styles.cardLink}
                         href={item.media}
