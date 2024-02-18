@@ -8,8 +8,8 @@
 }
 
 .list {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   flex-flow: row wrap;
   gap: 40px;
@@ -24,6 +24,12 @@
 
 .lightImg {
   object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (prefers-color-scheme: light) {
