@@ -4,3 +4,10 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.secondary {
+  background: linear-gradient(to bottom right, #0072ff, #1d3757);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

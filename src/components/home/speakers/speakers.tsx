@@ -8,7 +8,7 @@ function Speakers() {
   return (
     <section className={styles.wrapper}>
       <Heading level={2} className={styles.title}>
-        Featured Speakers
+        Judges
       </Heading>
       <ul className={styles.list}>
         {speakers.map((speaker) => {

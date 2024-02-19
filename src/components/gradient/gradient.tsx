@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./gradient.module.css";
 
 interface Props extends React.ComponentPropsWithoutRef<typeof Slot> {
-  gradientVariant?: "primary";
+  gradientVariant?: "primary" | "secondary";
   children: React.ReactNode;
   className?: string;
 }

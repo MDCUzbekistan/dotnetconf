@@ -1,47 +1,23 @@
 "use server";
-import axios from "axios";
+import { axiosInstance } from "@/axios";
 import { z } from "zod";
 
 const RegistrationSchema = z.object({
-  firstName: z.string().min(3, "Minimum length should be 3"),
-  lastName: z.string().min(3, "Minimum length should be 3"),
+  firstName: z.string().min(1, "Please provide a first name"),
+  lastName: z.string(),
   email: z.string().email("Please provide a valid email"),
-  phoneNumber: z
-    .string()
-    .refine(
-      (value) => /^[+\d]+$/.test(value),
-      "Please provide a valid phone number"
-    ),
+  phoneNumber: z.string().min(1, "Please provide a phone number"), // TODO: validation?
   preferredLanguage: z.coerce.number(),
-  country: z.string().min(3, "Please provide text with more than 3 characters"),
-  city: z.string().min(2, "Please provide text with more than 2 characters"),
-  role: z
-    .string()
-    .min(1, "Please provide a role")
-    .transform((value) => Number(value)),
-  expectation: z
-    .string()
-    .min(3, "Please provide text with more than 3 characters"),
+  country: z.string().min(1, "Please provide a country"),
+  city: z.string().min(1, "Please provide a city"),
+  role: z.coerce.number().min(1, "Please provide a role"),
+  position: z.coerce.number().min(1, "Please provide a position"),
+  expectation: z.string().min(1, "Please provide an expectation"),
 });
-
-type RegistrationState = {
-  errors?: {
-    firstName?: string[];
-    lastName?: string[];
-    email?: string[];
-    phoneNumber?: string[];
-    country?: string[];
-    city?: string[];
-    role?: string[];
-    expectation?: string[];
-  };
-  success: boolean;
-  message: string;
-};
 
 export async function register(
   preferredLanguage: string,
-  prevState: RegistrationState,
+  prevState: any,
   formData: FormData
 ) {
   const validatedFields = RegistrationSchema.safeParse({
@@ -53,6 +29,7 @@ export async function register(
     city: formData.get("city"),
     expectation: formData.get("expectation"),
     role: formData.get("role"),
+    position: formData.get("position"),
     preferredLanguage,
   });
 
@@ -63,16 +40,14 @@ export async function register(
       errors: validatedFields.error.flatten().fieldErrors,
     };
   }
+  console.log(validatedFields.data);
 
   try {
-    await axios.post(
-      `${process.env.NEXT_PUBLIC_API_URL}/users`,
-      validatedFields.data
-    );
+    await axiosInstance.post(`/users`, validatedFields.data);
 
     return {
       success: true,
-      message: `You have been registered successfully. You will receive an email with further instructions later.`,
+      message: `You have been registered successfully.`,
     };
   } catch (error: any) {
     return {

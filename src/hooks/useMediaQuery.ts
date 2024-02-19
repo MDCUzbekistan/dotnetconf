@@ -18,5 +18,9 @@ export default function useMediaQuery(query: string) {
     return window.matchMedia(query).matches;
   };
 
-  return React.useSyncExternalStore(subscribe, getSnapshot);
+  const getServerSnapshot = () => {
+    return null;
+  };
+
+  return React.useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 }

@@ -14,7 +14,7 @@ import { register } from "./actions";
 import Submit from "@/components/submit";
 import { useToast } from "@/components/toast/toast";
 import { redirect, useRouter } from "next/navigation";
-import { ROLES } from "@/data";
+import { POSITIONS, ROLES } from "@/data";
 
 const Page = () => {
   const { openToast } = useToast();
@@ -81,6 +81,21 @@ const Page = () => {
             {ROLES.map((role) => {
               return (
                 <SelectItem value={role.value} key={role.id}>
+                  {role.title}
+                </SelectItem>
+              );
+            })}
+          </Select>
+        </FormField>
+        <FormField
+          label="Choose your position"
+          required={true}
+          errorMessage={state.errors?.position}
+        >
+          <Select name="position" placeholder="Select a position">
+            {POSITIONS.map((role) => {
+              return (
+                <SelectItem value={role.value.toString()} key={role.id}>
                   {role.title}
                 </SelectItem>
               );

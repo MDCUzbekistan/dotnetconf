@@ -12,14 +12,14 @@ function Hero() {
     <section className={styles.wrapper}>
       <div className={styles.content}>
         <Heading level={1} className={styles.title}>
-          Microsoft Community Conf 2023 Uzbekistan
+          Sharpist 2024 Hackathon
         </Heading>
         <p className={`gradient ${styles.subtitle}`}>
-          First In-Person Microsoft Developers Community Conference <br /> in
-          Uzbekistan
+          International hackathon to find solutions to problems using Microsoft
+          Technologies
           <br />
           <Gradient>
-            <span className={styles.date}>December 2</span>
+            <span className={styles.date}>8-9-10 March</span>
           </Gradient>
         </p>
         <div className={styles.buttons}>

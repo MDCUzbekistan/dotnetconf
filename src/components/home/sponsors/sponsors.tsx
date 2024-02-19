@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./sponsors.module.css";
 import Heading from "@/components/heading";
 import Image from "next/image";
-import { sponsors } from "@/data";
+import { partners } from "@/data";
 
 function Sponsors() {
   return (
@@ -11,7 +11,7 @@ function Sponsors() {
         Our partners
       </Heading>
       <div className={styles.list}>
-        {sponsors.map((item) => {
+        {partners.map((item) => {
           return (
             <a key={item.id} className={styles.link} href={item.link}>
               <Image

@@ -10,6 +10,8 @@
   margin: 0;
 }
 
+/* TODO: Eliminate after re-design */
+
 :root {
   --color-midnight-blue-primary: #190649ff;
   --color-midnight-blue-shade-10: #14053aff;

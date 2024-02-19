@@ -29,7 +29,7 @@ function Connect() {
               href="https://twitter.com/search?q=dotnetconf&src=typed_query&f=live"
               target="_blank"
             >
-              #dotnetconf
+              #sharpist2024
             </a>
           </Gradient>
         </p>
