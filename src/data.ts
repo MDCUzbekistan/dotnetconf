@@ -363,27 +363,21 @@ export const speakers = [
 export const swags = [
   {
     id: 1,
-    title: "Free Swag",
+    title: "Networking",
     description:
-      "Have fun with these free swag items. Show them off on Twitter using #mcdconfuz2023",
-    linkTitle: "View on GitHub",
-    linkUrl: "/swag",
+      "Connect and network with industry peers at our conference, fostering valuable relationships and collaborations.",
   },
   {
     id: 2,
-    title: "Sponsor swag bag",
+    title: "Mentoring sessions",
     description:
-      "Enter to win 1 of 25 swag bags with prizes from our sponsors.",
-    linkTitle: "Enter to win",
-    linkUrl: "/swag",
+      "Get the chance to have a one-on-one mentoring session with our speakers and industry experts.",
   },
   {
     id: 3,
-    title: "Challenges",
+    title: "Prizes",
     description:
-      "Participate for a chance to win an awesome price from our sponsors.",
-    linkTitle: "Find the clues",
-    linkUrl: "/swag",
+      "Attendees can look forward to exciting giveaways, unforgettable gifts, and ample networking opportunities.",
   },
 ];
 
@@ -547,6 +541,15 @@ export const sponsors = [
 export const partners = [
   {
     id: 1,
+    title: "Microsoft developers community in Uzbekistan",
+    lightImg: "/images/sponsors/mdcu-light.svg",
+    darkImg: "/images/sponsors/mdcu-dark.svg",
+    imgWidth: 236,
+    imgHeight: 104,
+    link: "/",
+  },
+  {
+    id: 2,
     title: "Information Technology Investment Center",
     lightImg: "/images/partners/itic-dark.png",
     darkImg: "/images/partners/itic-light.png",
@@ -555,7 +558,7 @@ export const partners = [
     link: "https://itic.uz/",
   },
   {
-    id: 2,
+    id: 3,
     title: "INHA University in Tashkent",
     lightImg: "/images/partners/inha-light.svg",
     darkImg: "/images/partners/inha-dark.svg",
@@ -1082,72 +1085,5 @@ export const POSITIONS = [
     id: 4,
     value: 3,
     title: "Other",
-  },
-];
-
-export const community = [
-  {
-    id: 1,
-    src: "https://downloader.disk.yandex.ru/preview/c88ddecad2bd3a985885268f32a48a26ffa7d79551683fcc958a590666ee4159/65d337cf/ESxb9eO2_yOmY-D99Xdd3O4ieSjAF_wIyW7uzFIq31ywUvjgaX3VrVpLLqVSvqnwhLXUFM_WwD_v7K3WoaSxSw%3D%3D?uid=0&filename=KI8A1015.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2932x1360",
-  },
-  {
-    id: 2,
-    src: "https://downloader.disk.yandex.ru/preview/5175be01831494b3140d5f2c856bdac964d307d0f801b67ec71dade0651b1b2e/65d337cf/5bAE0GolHG1z1MPCs4OJmWuNioX5ys_P_RZNr3rwZYb7l3ajeZ9-2QCJEk7Ch1xqpKtThmNeVURch7opwN0yWQ%3D%3D?uid=0&filename=KI8A1034.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2932x1360",
-  },
-  {
-    id: 3,
-    src: "https://downloader.disk.yandex.ru/preview/738dfa4e…pe=image%2Fjpeg&owner_uid=0&tknv=v2&size=2932x984",
-  },
-  {
-    id: 4,
-    src: "https://downloader.disk.yandex.ru/preview/8d80a1b6…pe=image%2Fjpeg&owner_uid=0&tknv=v2&size=2932x984",
-  },
-  {
-    id: 5,
-    src: "https://downloader.disk.yandex.ru/preview/4b601a6c…pe=image%2Fjpeg&owner_uid=0&tknv=v2&size=2932x984",
-  },
-  {
-    id: 6,
-    src: "https://downloader.disk.yandex.ru/preview/9e19c9c0…e=image%2Fjpeg&owner_uid=0&tknv=v2&size=2932x1262",
-  },
-  {
-    id: 7,
-    src: "https://downloader.disk.yandex.ru/preview/fdba620d…e=image%2Fjpeg&owner_uid=0&tknv=v2&size=2932x1262",
-  },
-  {
-    id: 8,
-    src: "https://downloader.disk.yandex.ru/preview/f877e6f9…e=image%2Fjpeg&owner_uid=0&tknv=v2&size=2932x1262",
-  },
-  {
-    id: 9,
-    src: "https://downloader.disk.yandex.ru/preview/4c70b6a6…e=image%2Fjpeg&owner_uid=0&tknv=v2&size=2932x1262",
-  },
-  {
-    id: 10,
-    src: "https://downloader.disk.yandex.ru/preview/c88ddecad2bd3a985885268f32a48a26ffa7d79551683fcc958a590666ee4159/65d337cf/ESxb9eO2_yOmY-D99Xdd3O4ieSjAF_wIyW7uzFIq31ywUvjgaX3VrVpLLqVSvqnwhLXUFM_WwD_v7K3WoaSxSw%3D%3D?uid=0&filename=KI8A1015.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2932x1360",
-  },
-  {
-    id: 11,
-    src: "https://downloader.disk.yandex.ru/preview/b5e0d046…e=image%2Fjpeg&owner_uid=0&tknv=v2&size=2932x1262",
-  },
-  {
-    id: 12,
-    src: "https://downloader.disk.yandex.ru/preview/403346d4…e=image%2Fjpeg&owner_uid=0&tknv=v2&size=2932x1262",
-  },
-  {
-    id: 13,
-    src: "https://downloader.disk.yandex.ru/preview/db40198b…e=image%2Fjpeg&owner_uid=0&tknv=v2&size=2932x1262",
-  },
-  {
-    id: 14,
-    src: "https://downloader.disk.yandex.ru/preview/6480fb3c…e=image%2Fjpeg&owner_uid=0&tknv=v2&size=2932x1262",
-  },
-  {
-    id: 15,
-    src: "https://downloader.disk.yandex.ru/preview/c3ddbaea…e=image%2Fjpeg&owner_uid=0&tknv=v2&size=2932x1262",
-  },
-  {
-    id: 16,
-    src: "https://downloader.disk.yandex.ru/preview/6e301e74…e=image%2Fjpeg&owner_uid=0&tknv=v2&size=2932x1262",
   },
 ];

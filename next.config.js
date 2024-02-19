@@ -10,6 +10,11 @@ const nextConfig = {
       },
     ],
   },
+  experimental: {
+    serverActions: {
+      allowedOrigins: ["https://www.mdcuzbekistan.com"],
+    },
+  },
 };
 
 module.exports = nextConfig;

@@ -8,11 +8,11 @@ function Swags() {
     <section className={styles.wrapper}>
       <header className={styles.header}>
         <Heading className={styles.title} level={2}>
-          Giveaways and free swag
+          Features
         </Heading>
         <p className={styles.description}>
-          Have fun with these free digital swag items & participate in our
-          giveaways!
+          Creating Tomorrow with Smart Ideas using Microsoft Technologies and AI
+          Excellence!
         </p>
       </header>
       <div className={styles.list}>

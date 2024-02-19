@@ -12,11 +12,11 @@ function Hero() {
     <section className={styles.wrapper}>
       <div className={styles.content}>
         <Heading level={1} className={styles.title}>
-          Sharpist 2024 Hackathon
+          Sharpist 2024 - AI Hackaton
         </Heading>
         <p className={`gradient ${styles.subtitle}`}>
-          International hackathon to find solutions to problems using Microsoft
-          Technologies
+          International hackathon to find solutions to problems using AI and
+          Microsoft Technologies
           <br />
           <Gradient>
             <span className={styles.date}>8-9-10 March</span>
@@ -24,11 +24,8 @@ function Hero() {
         </p>
         <div className={styles.buttons}>
           <Button asChild={true} className={styles.btn} variant="outlined">
-            <Link
-              target="_blank"
-              href="https://www.linkedin.com/company/mdc-uzbekistan/"
-            >
-              Follow us
+            <Link target="_blank" href="https://t.me/+pmGMZNEYxAdmMWQ6">
+              Join us
             </Link>
           </Button>
           <Button className={styles.btn} variant="outlined" asChild={true}>
