@@ -6,9 +6,6 @@ import { schedule } from "@/data";
 function Schedule() {
   return (
     <section className={styles.wrapper}>
-      <Heading level={2} className={styles.title}>
-        Hackathon at a glance
-      </Heading>
       <div className={styles.list}>
         {schedule.map((item) => {
           return (

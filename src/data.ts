@@ -506,21 +506,20 @@ export const features = [
 export const schedule = [
   {
     id: Math.random(),
-    title: "Innovative projects",
+    title: "Directions",
     description:
-      "Work on innovative projects, collaborate with industry experts, and showcase your skills. Get ready to innovate, create, and compete for exciting prizes!",
+      "Directions to the hackathon includes Artificial Intelligence only",
   },
   {
     id: Math.random(),
-    title: "Networking",
+    title: "Requirements & Techs",
     description:
-      "Connect and network with industry peers at our conference, fostering valuable relationships and collaborations.",
+      "The project should include at least two Microsoft technologies (Azure DevOps, Azure, Visual Studio, Visual Studio Code, .NET, MS SQL, Github, TypeScript, Windows)",
   },
   {
     id: Math.random(),
-    title: "Mentoring sessions",
-    description:
-      "Get the chance to have a one-on-one mentoring session with our speakers and industry experts.",
+    title: "About Team",
+    description: "A team have to include 3 people at least",
   },
 ];
 
