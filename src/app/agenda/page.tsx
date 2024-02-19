@@ -3,8 +3,11 @@ import styles from "./agenda.module.css";
 import Heading from "@/components/heading";
 import Gradient from "@/components/gradient";
 import { agenda } from "@/data";
+import { notFound } from "next/navigation";
 
 const Page = () => {
+  notFound();
+
   return (
     <section className={styles.wrapper}>
       <Heading className={styles.title} level={1}>
@@ -26,7 +29,7 @@ const Page = () => {
                     <Gradient gradientVariant="primary">
                       <p className={styles.sessionTime}>
                         {session.timeFrom} - {session.timeTo}{" "}
-                        {session.timezoneOffset}
+                        {/* {session.timezoneOffset} */}
                       </p>
                     </Gradient>
                     <div

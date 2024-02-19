@@ -13,7 +13,7 @@ import { register } from "./actions";
 import Submit from "@/components/submit";
 import { useToast } from "@/components/toast/toast";
 import { redirect, useRouter } from "next/navigation";
-import { POSITIONS, ROLES } from "@/data";
+import { CIS_COUNTRIES, POSITIONS, ROLES } from "@/data";
 
 const Page = () => {
   const { openToast } = useToast();
@@ -107,6 +107,21 @@ const Page = () => {
           </Select>
         </FormField>
         <FormField
+          label="Where are you from (Country)?"
+          errorMessage={state.errors?.country}
+          required={true}
+        >
+          <Select name="country" placeholder="Example: Uzbekistan">
+            {CIS_COUNTRIES.map((item) => {
+              return (
+                <SelectItem value={item.value} key={item.id}>
+                  {item.title}
+                </SelectItem>
+              );
+            })}
+          </Select>
+        </FormField>
+        <FormField
           label="Phone number"
           errorMessage={state.errors?.phoneNumber}
           required={true}
@@ -118,13 +133,6 @@ const Page = () => {
           />
         </FormField>
         <FormField
-          label="Where are you from (Country)?"
-          errorMessage={state.errors?.country}
-          required={true}
-        >
-          <Input name="country" placeholder="Example: Uzbekistan" type="text" />
-        </FormField>
-        <FormField
           label="Where are you from (City)?"
           errorMessage={state.errors?.city}
           required={true}
@@ -132,7 +140,7 @@ const Page = () => {
           <Input name="city" placeholder="Example: Tashkent" type="text" />
         </FormField>
         <FormField
-          label="What are your expectations for conference?"
+          label="What are your expectations for hackathon?"
           errorMessage={state.errors?.expectation}
           required={true}
         >

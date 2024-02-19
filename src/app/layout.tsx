@@ -13,9 +13,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
-  title: "Microsoft Community Conf 2023 Uzbekistan",
+  title: "MDC Uzbekistan",
   description:
-    "Join the Microsoft Community Conf 2023 Uzbekistan free event in December 2 to learn about the newest developments across the .NET platform, open source, and dev tools.",
+    "Microsoft Developers Community in Uzbekistan is a community of developers who are passionate about Microsoft technologies and want to share their knowledge with others.",
 };
 
 interface Props {

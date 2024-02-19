@@ -30,6 +30,7 @@
   left: 30%;
   top: 1%;
   object-fit: contain;
+  pointer-events: none;
 }
 
 .btn {

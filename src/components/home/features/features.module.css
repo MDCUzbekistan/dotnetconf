@@ -6,7 +6,7 @@
   display: grid;
   gap: 64px;
 
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.1fr;
 }
 
 .feature:not(:last-child) {

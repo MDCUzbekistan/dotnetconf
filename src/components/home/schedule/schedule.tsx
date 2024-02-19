@@ -7,7 +7,7 @@ function Schedule() {
   return (
     <section className={styles.wrapper}>
       <Heading level={2} className={styles.title}>
-        Conference at a glance
+        Hackathon at a glance
       </Heading>
       <div className={styles.list}>
         {schedule.map((item) => {
