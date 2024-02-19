@@ -12,7 +12,12 @@ const nextConfig = {
   },
   experimental: {
     serverActions: {
-      allowedOrigins: ["https://www.mdcuzbekistan.com"],
+      allowedOrigins: [
+        "www.mdcuzbekistan.com",
+        "localhost:3000",
+        "https://www.mdcuzbekistan.com",
+        "https://www.mdcuzbekistan.com/register",
+      ],
     },
   },
 };

@@ -15,8 +15,8 @@ function Hero() {
           Sharpist 2024 - AI Hackaton
         </Heading>
         <p className={`gradient ${styles.subtitle}`}>
-          International hackathon to find solutions to problems using AI and
-          Microsoft Technologies
+          Creating Tomorrow with Smart Ideas using Microsoft Technologies and AI
+          Excellence!
           <br />
           <Gradient>
             <span className={styles.date}>8-9-10 March</span>
