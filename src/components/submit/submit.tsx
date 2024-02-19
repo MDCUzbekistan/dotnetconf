@@ -2,7 +2,6 @@ import React from "react";
 import { useFormStatus } from "react-dom";
 import Button from "../button";
 import styles from "./submit.module.css";
-import { Loader } from "lucide-react";
 
 interface Props extends React.ComponentPropsWithoutRef<typeof Button> {
   children: React.ReactNode;
@@ -15,11 +14,10 @@ function Submit({ children, className, ...props }: Props) {
   return (
     <Button
       disabled={pending}
-      className={` ${className} ${styles.btn}`}
+      className={`${className} ${styles.btn}`}
       {...props}
     >
-      {children}
-      {pending && <Loader className={styles.loader} />}
+      {pending ? "Submitting..." : children}
     </Button>
   );
 }

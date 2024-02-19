@@ -4,7 +4,7 @@ import { z } from "zod";
 
 const RegistrationSchema = z.object({
   firstName: z.string().min(1, "Please provide a first name"),
-  lastName: z.string(),
+  lastName: z.string().min(1, "Please provide a last name"),
   email: z.string().email("Please provide a valid email"),
   phoneNumber: z.string().min(1, "Please provide a phone number"), // TODO: validation?
   preferredLanguage: z.coerce.number(),
@@ -13,13 +13,10 @@ const RegistrationSchema = z.object({
   role: z.coerce.number().min(1, "Please provide a role"),
   position: z.coerce.number().min(1, "Please provide a position"),
   expectation: z.string().min(1, "Please provide an expectation"),
+  teamname: z.string().min(1, "Please provide a team name"),
 });
 
-export async function register(
-  preferredLanguage: string,
-  prevState: any,
-  formData: FormData
-) {
+export async function register(prevState: any, formData: FormData) {
   const validatedFields = RegistrationSchema.safeParse({
     firstName: formData.get("firstName"),
     lastName: formData.get("lastName"),
@@ -30,7 +27,8 @@ export async function register(
     expectation: formData.get("expectation"),
     role: formData.get("role"),
     position: formData.get("position"),
-    preferredLanguage,
+    preferredLanguage: "1",
+    teamname: formData.get("teamname"),
   });
 
   if (validatedFields.success === false) {
@@ -40,7 +38,6 @@ export async function register(
       errors: validatedFields.error.flatten().fieldErrors,
     };
   }
-  console.log(validatedFields.data);
 
   try {
     await axiosInstance.post(`/users`, validatedFields.data);
@@ -50,9 +47,11 @@ export async function register(
       message: `You have been registered successfully.`,
     };
   } catch (error: any) {
+    // console.log(error);
+
     return {
       success: false,
-      message: error.response.data.message,
+      message: "Something went wrong. Please try again later.",
     };
   }
 }

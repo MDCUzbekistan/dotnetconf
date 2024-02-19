@@ -5,7 +5,6 @@ import Heading from "@/components/heading";
 import {
   FormField,
   Input,
-  Checkbox,
   Select,
   SelectItem,
 } from "@/components/form-field/form-field";
@@ -19,9 +18,7 @@ import { POSITIONS, ROLES } from "@/data";
 const Page = () => {
   const { openToast } = useToast();
   const router = useRouter();
-  const [preferredLanguage, setPreferredLanguage] = React.useState("0");
-  const registerWithPreferredLanguage = register.bind(null, preferredLanguage);
-  const [state, formAction] = useFormState(registerWithPreferredLanguage, {
+  const [state, formAction] = useFormState(register, {
     message: ``,
     success: false,
   });
@@ -51,6 +48,13 @@ const Page = () => {
         Register
       </Heading>
       <form action={formAction} className={styles.form}>
+        <FormField
+          label="Team name"
+          required={true}
+          errorMessage={state.errors?.teamname}
+        >
+          <Input name="teamname" placeholder="Team name" type="text" />
+        </FormField>
         <FormField
           label="First name"
           required={true}
@@ -137,30 +141,6 @@ const Page = () => {
             placeholder="Enter you answer"
             type="text"
           />
-        </FormField>
-        <FormField label="Preferred Language" required={true}>
-          <div className={styles.checkboxesWrapper}>
-            <Checkbox
-              checked={preferredLanguage === "0"}
-              onCheckedChange={() => setPreferredLanguage("0")}
-              className={styles.checkbox}
-              label="Uzbek"
-            />
-            <Checkbox
-              checked={preferredLanguage === "1"}
-              onCheckedChange={() => setPreferredLanguage("1")}
-              name="1"
-              className={styles.checkbox}
-              label="English"
-            />
-            <Checkbox
-              onCheckedChange={() => setPreferredLanguage("2")}
-              checked={preferredLanguage === "2"}
-              name="2"
-              className={styles.checkbox}
-              label="Russian"
-            />
-          </div>
         </FormField>
         <Submit className={styles.submitBtn} variant="filled">
           Submit
