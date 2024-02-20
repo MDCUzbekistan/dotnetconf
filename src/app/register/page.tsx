@@ -15,6 +15,8 @@ import { useToast } from "@/components/toast/toast";
 import { redirect, useRouter } from "next/navigation";
 import { CIS_COUNTRIES, POSITIONS, ROLES } from "@/data";
 
+export const dynamic = "force-dynamic";
+
 const Page = () => {
   const { openToast } = useToast();
   const router = useRouter();
