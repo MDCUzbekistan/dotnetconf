@@ -6,7 +6,7 @@ const Error = () => {
   return (
     <section className="not-found">
       <Heading className="not-found-title" level={3}>
-        Something went wrong, please try again later...
+        Something went wrong, we are working on it. Please try again later.
       </Heading>
     </section>
   );
