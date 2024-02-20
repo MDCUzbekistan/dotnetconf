@@ -29,6 +29,18 @@
   background: linear-gradient(128.87deg, #d600aa 14.05%, #512bd4 89.3%);
 }
 
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: var(--grid-template-mobile);
+    gap: var(--grid-gap-mobile);
+    row-gap: var(--vertical-gap-mobile);
+  }
+
+  .card {
+    grid-column: span 12;
+  }
+}
+
 .cardYoutube {
   background: linear-gradient(128.87deg, #292929 14.05%, #0a0a0a 89.3%);
 }
