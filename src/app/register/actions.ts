@@ -11,7 +11,7 @@ const RegistrationSchema = z.object({
   country: z.string().min(1, "Please provide a country"),
   city: z.string().min(1, "Please provide a city"),
   role: z.coerce.number(),
-  position: z.coerce.number().min(1, "Please provide a position"),
+  position: z.coerce.number(),
   expectation: z.string().min(1, "Please provide an expectation"),
   teamname: z.string().min(1, "Please provide a team name"),
 });
