@@ -342,6 +342,28 @@ export const speakers = [
     url: "https://www.linkedin.com/in/doniyorniazov",
     username: "doniyorniazov",
   },
+  {
+    id: Math.random(),
+    name: "Andrei",
+    surname: "Khaidarov",
+    img: "/images/speakers/andrei-khaidarov.jpg",
+    position:
+      "Microsoft Data Platform MVP | Power Platform Solution Architect / BI Expert",
+    isFeatured: true,
+    url: "https://www.linkedin.com/in/andgenn/",
+    username: "andgenn",
+  },
+  {
+    id: Math.random(),
+    name: "Artem",
+    surname: "Chernevskiy",
+    img: "/images/speakers/artem-chernevskiy.jpg",
+    position:
+      "Microsoft Azure AI expert | Technical Paradigms Shifter | Ex-Microsoft",
+    isFeatured: true,
+    url: "https://www.linkedin.com/in/artem-chernevskiy/",
+    username: "artem-chernevskiy",
+  },
   // {
   //   id: Math.random(),
   //   name: "Oybek",
