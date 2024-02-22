@@ -6,7 +6,7 @@ const RegistrationSchema = z.object({
   firstName: z.string().min(1, "Please provide a first name"),
   lastName: z.string().min(1, "Please provide a last name"),
   email: z.string().email("Please provide a valid email"),
-  phoneNumber: z.string().min(1, "Please provide a phone number"), // TODO: validation?
+  phoneNumber: z.string().min(1, "Please provide a phone number"),
   preferredLanguage: z.coerce.number(),
   country: z.string().min(1, "Please provide a country"),
   city: z.string().min(1, "Please provide a city"),
@@ -47,10 +47,8 @@ export async function register(prevState: any, formData: FormData) {
       message: `You have been registered successfully.`,
     };
   } catch (error: any) {
-    // console.log(error);
-
     const message =
-      error.response?.message ||
+      error.response.data?.message ||
       "Something went wrong. Please try again later.";
 
     return {

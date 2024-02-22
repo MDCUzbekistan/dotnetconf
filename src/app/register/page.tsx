@@ -43,8 +43,8 @@ const Page = () => {
 
     setTimeout(() => {
       window.open("https://t.me/+pmGMZNEYxAdmMWQ6", "_blank");
-      redirect("/");
-    }, 2000);
+    }, 1000);
+    redirect("/");
   }, [state, router, openToast]);
 
   return (
