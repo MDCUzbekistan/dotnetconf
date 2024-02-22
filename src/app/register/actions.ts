@@ -50,7 +50,8 @@ export async function register(prevState: any, formData: FormData) {
     // console.log(error);
 
     const message =
-      error.message || "Something went wrong. Please try again later.";
+      error.response?.message ||
+      "Something went wrong. Please try again later.";
 
     return {
       success: false,
