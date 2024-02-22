@@ -49,9 +49,12 @@ export async function register(prevState: any, formData: FormData) {
   } catch (error: any) {
     // console.log(error);
 
+    const message =
+      error.message || "Something went wrong. Please try again later.";
+
     return {
       success: false,
-      message: "Something went wrong. Please try again later.",
+      message,
     };
   }
 }

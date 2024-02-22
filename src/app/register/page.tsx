@@ -44,7 +44,7 @@ const Page = () => {
     setTimeout(() => {
       window.open("https://t.me/+pmGMZNEYxAdmMWQ6", "_blank");
       redirect("/");
-    }, 3000);
+    }, 2000);
   }, [state, router, openToast]);
 
   return (
