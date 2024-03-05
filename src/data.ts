@@ -364,6 +364,16 @@ export const speakers = [
     url: "https://www.linkedin.com/in/artem-chernevskiy/",
     username: "artem-chernevskiy",
   },
+  {
+    id: Math.random(),
+    name: "Ashish",
+    surname: "Sharma",
+    img: "/images/speakers/ashish-sharma.png",
+    position: "",
+    isFeatured: true,
+    url: "",
+    username: "",
+  },
   // {
   //   id: Math.random(),
   //   name: "Oybek",
