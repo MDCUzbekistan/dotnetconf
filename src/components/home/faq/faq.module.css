@@ -1,0 +1,14 @@
+.wrapper {
+  margin-top: 48px;
+}
+
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

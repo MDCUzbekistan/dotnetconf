@@ -1,4 +1,5 @@
 import Connect from "@/components/home/connect";
+import Faq from "@/components/home/faq";
 import Features from "@/components/home/features";
 import Hero from "@/components/home/hero";
 import Schedule from "@/components/home/schedule";
@@ -15,6 +16,7 @@ export default function Home() {
       <Schedule />
       <Sponsors />
       <Swags />
+      <Faq />
       <Connect />
     </>
   );

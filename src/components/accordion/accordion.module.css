@@ -1,0 +1,44 @@
+.wrapper {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.trigger {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0;
+}
+
+.content {
+  background: #fff;
+  overflow: hidden;
+  padding: 12px 20px;
+}
+/* 
+.content[data-state="open"] {
+  animation: slideDown 300ms;
+}
+
+.content[data-state="closed"] {
+  animation: slideUp 300ms;
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-collapsible-content-height);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    height: var(--radix-collapsible-content-height);
+  }
+  to {
+    height: 0;
+  }
+} */
