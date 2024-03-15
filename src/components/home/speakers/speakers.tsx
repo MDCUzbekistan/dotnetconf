@@ -6,7 +6,7 @@ import { speakers } from "@/data";
 
 function Speakers() {
   return (
-    <section className={styles.wrapper}>
+    <section id="judges" className={styles.wrapper}>
       <Heading level={2} className={styles.title}>
         Judges
       </Heading>

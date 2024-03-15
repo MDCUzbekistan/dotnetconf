@@ -6,7 +6,7 @@ import { partners } from "@/data";
 
 function Sponsors() {
   return (
-    <section className={styles.wrapper}>
+    <section id="partners" className={styles.wrapper}>
       <Heading className={styles.title} level={2}>
         Our partners
       </Heading>

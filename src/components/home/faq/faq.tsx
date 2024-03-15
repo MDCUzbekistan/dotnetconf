@@ -20,7 +20,7 @@ const FAQ = async () => {
   const faqs = await getFAQs();
 
   return (
-    <section className={styles.wrapper}>
+    <section id="faq" className={styles.wrapper}>
       <Heading level={2} className={styles.title}>
         FAQ
       </Heading>

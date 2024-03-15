@@ -6,7 +6,7 @@ import Gradient from "@/components/gradient";
 function Connect() {
   return (
     <>
-      <section className={styles.wrapper}>
+      <section id="connect" className={styles.wrapper}>
         <div>
           <Heading className={styles.title} level={4}>
             Stay connected

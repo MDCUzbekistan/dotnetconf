@@ -19,7 +19,7 @@ function Hero() {
           Excellence!
           <br />
           <Gradient>
-            <span className={styles.date}>8-9-10 March</span>
+            <span className={styles.date}>New date is coming</span>
           </Gradient>
         </p>
         <div className={styles.buttons}>

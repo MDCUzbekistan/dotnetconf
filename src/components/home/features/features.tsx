@@ -5,7 +5,7 @@ import { features } from "@/data";
 
 function Features() {
   return (
-    <section className={styles.wrapper}>
+    <section id="features" className={styles.wrapper}>
       {features.map((item) => {
         return (
           <article key={item.id} className={styles.feature}>

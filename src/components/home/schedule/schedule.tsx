@@ -5,7 +5,7 @@ import { schedule } from "@/data";
 
 function Schedule() {
   return (
-    <section className={styles.wrapper}>
+    <section id="rules" className={styles.wrapper}>
       <Heading className={styles.title} level={2}>
         Rules
       </Heading>

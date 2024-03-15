@@ -5,7 +5,7 @@ import { swags } from "@/data";
 
 function Swags() {
   return (
-    <section className={styles.wrapper}>
+    <section id="features" className={styles.wrapper}>
       <header className={styles.header}>
         <Heading className={styles.title} level={2}>
           Features
