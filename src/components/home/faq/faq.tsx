@@ -4,6 +4,8 @@ import React from "react";
 import styles from "./faq.module.css";
 import Heading from "@/components/heading";
 
+export const dynamic = "force-dynamic";
+
 type FAQType = {
   id: number;
   question: string;
