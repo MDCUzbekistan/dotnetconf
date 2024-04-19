@@ -1,33 +1,29 @@
 import React from "react";
-import styles from "./speakers.module.css";
+import styles from "./judges.module.css";
 import Heading from "@/components/heading";
 import Image from "next/image";
-import { speakers } from "@/data";
+import { judges } from "@/data";
 
-function Speakers() {
+function Judges() {
   return (
     <section id="judges" className={styles.wrapper}>
       <Heading level={2} className={styles.title}>
         Judges
       </Heading>
       <ul className={styles.list}>
-        {speakers.map((speaker) => {
-          if (!speaker.isFeatured) {
-            return null;
-          }
-
+        {judges.map((judge) => {
           return (
-            <section key={speaker.id} className={styles.card}>
+            <section key={judge.id} className={styles.card}>
               <div className={styles.content}>
-                <p className={styles.name}>{speaker.name}</p>
-                <p className={styles.surname}>{speaker.surname}</p>
+                <p className={styles.name}>{judge.name}</p>
+                <p className={styles.surname}>{judge.surname}</p>
               </div>
               <Image
                 className={styles.img}
                 width={165}
                 height={165}
-                src={speaker.img}
-                alt={`${speaker.name} ${speaker.surname} photo`}
+                src={judge.img}
+                alt={`${judge.name} ${judge.surname}`}
               />
             </section>
           );
@@ -37,4 +33,4 @@ function Speakers() {
   );
 }
 
-export default Speakers;
+export default Judges;

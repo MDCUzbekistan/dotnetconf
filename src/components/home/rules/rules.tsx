@@ -1,16 +1,16 @@
 import React from "react";
-import styles from "./schedule.module.css";
+import styles from "./rules.module.css";
 import Heading from "@/components/heading";
-import { schedule } from "@/data";
+import { rules } from "@/data";
 
-function Schedule() {
+function Rules() {
   return (
     <section id="rules" className={styles.wrapper}>
       <Heading className={styles.title} level={2}>
         Rules
       </Heading>
       <div className={styles.list}>
-        {schedule.map((item) => {
+        {rules.map((item) => {
           return (
             <article key={item.id}>
               <Heading className={styles.heading} level={3}>
@@ -25,4 +25,4 @@ function Schedule() {
   );
 }
 
-export default Schedule;
+export default Rules;
