@@ -12,12 +12,14 @@ import { useFormState } from "react-dom";
 import { register } from "./actions";
 import Submit from "@/components/submit";
 import { useToast } from "@/components/toast/toast";
-import { redirect, useRouter } from "next/navigation";
+import { notFound, redirect, useRouter } from "next/navigation";
 import { CIS_COUNTRIES, POSITIONS, ROLES } from "@/data";
 
 export const dynamic = "force-dynamic";
 
 const Page = () => {
+  notFound();
+
   const { openToast } = useToast();
   const router = useRouter();
   const [state, formAction] = useFormState(register, {

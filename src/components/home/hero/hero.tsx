@@ -28,12 +28,12 @@ function Hero() {
               Join us
             </Link>
           </Button>
-          <Button className={styles.btn} variant="outlined" asChild={true}>
+          {/* <Button className={styles.btn} variant="outlined" asChild={true}>
             <Link href="/register">
               Register
               <ArrowRight className={styles.arrow} />
             </Link>
-          </Button>
+          </Button> */}
         </div>
       </div>
       <Image

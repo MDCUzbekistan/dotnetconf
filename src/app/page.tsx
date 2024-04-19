@@ -16,7 +16,7 @@ export default function Home() {
       <Rules />
       <Sponsors />
       <Swags />
-      <Faq />
+      {/* <Faq /> */}
       <Connect />
     </>
   );
