@@ -191,6 +191,12 @@ export const judges = [
     surname: "Jakubov",
     img: "/images/speakers/alibek-jakubov.jpg",
   },
+  {
+    id: Math.random(),
+    name: "Gavita",
+    surname: "Regunath",
+    img: "/images/speakers/gavita-regunath.png",
+  },
 ];
 
 export const swags = [
