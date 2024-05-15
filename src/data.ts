@@ -264,8 +264,7 @@ export const footerLinks = [
 export const features = [
   {
     id: Math.random(),
-    title:
-      "The biggest Microsoft technologies related hackathon in CIS countries",
+    title: "The biggest Microsoft technologies related hackathon in CIS countries",
     description:
       "Join us for a 72-hour hackathon, where you'll have the chance to work on real-world projects, collaborate with industry experts, and showcase your skills. Get ready to innovate, create, and compete for exciting prizes! Every year, we bring together the brightest minds in the tech industry to collaborate, innovate, and create.",
   },
@@ -275,8 +274,7 @@ export const rules = [
   {
     id: Math.random(),
     title: "Directions",
-    description:
-      "Directions to the hackathon includes Artificial Intelligence only",
+    description: "Directions to the hackathon includes Artificial Intelligence only",
   },
   {
     id: Math.random(),
@@ -433,6 +431,14 @@ export const organizers = [
     img: "/images/core-team/otabek.jpg",
     url: "https://www.linkedin.com/in/otabek-ismoilov-8625b0222/",
     username: "otabek-ismoilov",
+  },
+  {
+    id: Math.random(),
+    name: "Abduvohid",
+    surname: "Abduhakimov",
+    img: "/images/core-team/wahid.png",
+    url: "https://www.linkedin.com/in/wahidustoz/",
+    username: "wahidustoz",
   },
 ];
 
