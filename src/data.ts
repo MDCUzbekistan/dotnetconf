@@ -228,8 +228,8 @@ export const headerLinks = [
   },
   {
     id: Math.random(),
-    title: "Agenda",
-    slug: "agenda",
+    title: "Sharpist",
+    slug: "sharpist",
   },
   {
     id: Math.random(),

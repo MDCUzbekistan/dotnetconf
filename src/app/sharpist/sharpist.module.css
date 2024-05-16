@@ -1,0 +1,35 @@
+.heading {
+  text-align: center;
+}
+
+.wrapper {
+  color: var(--color-foreground);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.link {
+  color: var(--color-link-foreground);
+  text-decoration: underline;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  min-height: 740px;
+}
+
+.imageWrapper > img {
+  object-fit: contain;
+}
+
+.list {
+  list-style: decimal;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

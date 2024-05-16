@@ -5,7 +5,6 @@ import Button from "@/components/button";
 import Image from "next/image";
 import Heading from "@/components/heading";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 
 function Hero() {
   return (
@@ -15,8 +14,7 @@ function Hero() {
           Sharpist 2024 - AI Hackaton
         </Heading>
         <p className={`gradient ${styles.subtitle}`}>
-          Creating Tomorrow with Smart Ideas using Microsoft Technologies and AI
-          Excellence!
+          Creating Tomorrow with Smart Ideas using Microsoft Technologies and AI Excellence!
           <br />
           <Gradient>
             <span className={styles.date}>19-21 April</span>
@@ -24,16 +22,8 @@ function Hero() {
         </p>
         <div className={styles.buttons}>
           <Button asChild={true} className={styles.btn} variant="outlined">
-            <Link target="_blank" href="https://t.me/+pmGMZNEYxAdmMWQ6">
-              Join us
-            </Link>
+            <Link href="/sharpist">See results</Link>
           </Button>
-          {/* <Button className={styles.btn} variant="outlined" asChild={true}>
-            <Link href="/register">
-              Register
-              <ArrowRight className={styles.arrow} />
-            </Link>
-          </Button> */}
         </div>
       </div>
       <Image
