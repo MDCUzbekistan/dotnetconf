@@ -18,12 +18,12 @@
 
 .imageWrapper {
   position: relative;
-  width: 100%;
-  min-height: 740px;
 }
 
-.imageWrapper > img {
-  object-fit: contain;
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
 }
 
 .list {
@@ -32,4 +32,38 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.item {
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.3s ease;
+  display: block;
+  border-radius: var(--corner-radius-xs);
+}
+
+.last {
+  grid-column: 1 / 3;
+}
+
+.item.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.item.tall {
+  grid-row: span 2;
+}
+
+@media (max-width: 768px) {
+  .imageGrid {
+    display: flex;
+    flex-direction: column;
+  }
 }

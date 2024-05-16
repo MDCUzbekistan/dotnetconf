@@ -4,6 +4,34 @@ import styles from "./sharpist.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
+const images = [
+  {
+    id: Math.random(),
+    src: "/images/sharpist/1.jpg",
+    alt: "post describing the sharpist hackathon",
+  },
+  {
+    id: Math.random(),
+    src: "/images/sharpist/2.jpg",
+    alt: "post describing the sharpist hackathon",
+  },
+  {
+    id: Math.random(),
+    src: "/images/sharpist/3.jpg",
+    alt: "the judges of sharpist hackathon",
+  },
+  {
+    id: Math.random(),
+    src: "/images/sharpist/4.jpg",
+    alt: "episode from sharpist hackathon",
+  },
+  {
+    id: Math.random(),
+    src: "/images/sharpist/5.jpg",
+    alt: "MDC Uzbekistan community",
+  },
+];
+
 const Page = () => {
   return (
     <section className={styles.wrapper}>
@@ -36,13 +64,7 @@ const Page = () => {
         (NLP), personalization, evaluation and skill rating, user interface, integration
         with other systems and ethical considerations.
       </p>
-      <div className={styles.imageWrapper}>
-        <Image
-          fill={true}
-          src="/images/sharpist/1.jpg"
-          alt="post describing the sharpist hackathon"
-        />
-      </div>
+      <div className={styles.imageWrapper}></div>
       <i>The Challenge</i>
       <p>
         The hackathon presented a unique challenge: teams needed to create AI-based systems
@@ -52,13 +74,7 @@ const Page = () => {
         Participants had to think critically about how their algorithms would understand
         context, generate relevant questions and deliver an intuitive user interface.
       </p>
-      <div className={styles.imageWrapper}>
-        <Image
-          fill={true}
-          src="/images/sharpist/2.jpg"
-          alt="post describing the sharpist hackathon"
-        />
-      </div>
+      <div className={styles.imageWrapper}></div>
       <i>Innovation through Microsoft Technologies</i>
       <p>
         Many teams turned to Microsoft Azure and Cognitive Services for their infrastructure
@@ -111,13 +127,7 @@ const Page = () => {
           solutions that incorporated strong ethical practices.
         </li>
       </ul>
-      <div className={styles.imageWrapper}>
-        <Image
-          fill={true}
-          src="/images/sharpist/3.jpg"
-          alt="the judges of sharpist hackathon"
-        />
-      </div>
+      <div className={styles.imageWrapper}></div>
       <i>The Winners</i>
       <p>
         Among 140 teams from CIS countries, 32 teams sorted on the base of requirements.
@@ -128,13 +138,7 @@ const Page = () => {
         demonstrated the potential of AI in education but also highlighted the importance of
         collaboration and diversity in tech.
       </p>
-      <div className={styles.imageWrapper}>
-        <Image
-          fill={true}
-          src="/images/sharpist/4.jpg"
-          alt="episode from sharpist hackathon"
-        />
-      </div>
+      <div className={styles.imageWrapper}></div>
       <i>Looking Ahead</i>
       <p>
         As AI continues to evolve, hackathons like this one are crucial for exploring new
@@ -144,8 +148,25 @@ const Page = () => {
         from this hackathon will undoubtedly inspire further advancements in AI-based
         educational tools.
       </p>
-      <div className={styles.imageWrapper}>
-        <Image fill={true} src="/images/sharpist/5.jpg" alt="MDC Uzbekistan community" />
+      <div className={styles.imageGrid}>
+        {images.map((image, index) => {
+          const isBig = index % 3 === 0;
+          return (
+            <div
+              key={image.id}
+              className={`${styles.item} ${isBig ? styles.big : styles.wide} ${
+                index === images.length - 1 ? styles.last : ""
+              }`}
+            >
+              <Image
+                width={576}
+                height={isBig ? 150 : 75}
+                src={image.src}
+                alt={image.alt}
+              />
+            </div>
+          );
+        })}
       </div>
     </section>
   );

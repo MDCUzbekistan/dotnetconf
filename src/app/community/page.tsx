@@ -3,7 +3,6 @@ import styles from "./community.module.css";
 import Heading from "@/components/heading";
 import Image from "next/image";
 import { range } from "@/utils";
-import Button from "@/components/button";
 
 const Page = () => {
   return (
@@ -25,21 +24,12 @@ const Page = () => {
           href="https://youtu.be/1N9KgNdH-W0"
           target="_blank"
         >
-          <Image
-            width={200}
-            height={45}
-            src="/images/youtube.svg"
-            alt="Youtube"
-          />
+          <Image width={200} height={45} src="/images/youtube.svg" alt="Youtube" />
           <p className={styles.cardSubtitle}>
             Microsoft Community Conf 2023 <br /> in Uzbekistan
           </p>
         </a>
-        <a
-          className={styles.card}
-          href="https://docs.dot-net.uz"
-          target="_blank"
-        >
+        <a className={styles.card} href="https://docs.dot-net.uz" target="_blank">
           <p className={styles.cardTitle}>Learn</p>
           <p className={styles.cardSubtitle}>Learn .NET in Uzbek</p>
         </a>
