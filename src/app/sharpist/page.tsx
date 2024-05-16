@@ -65,7 +65,7 @@ const Page = () => {
         with other systems and ethical considerations.
       </p>
       <div className={styles.imageWrapper}></div>
-      <i>The Challenge</i>
+      <Heading level={4}>The Challenge</Heading>
       <p>
         The hackathon presented a unique challenge: teams needed to create AI-based systems
         capable of generating test questionnaires that could adapt to different users&apos;
@@ -75,7 +75,7 @@ const Page = () => {
         context, generate relevant questions and deliver an intuitive user interface.
       </p>
       <div className={styles.imageWrapper}></div>
-      <i>Innovation through Microsoft Technologies</i>
+      <Heading level={4}>Innovation through Microsoft Technologies</Heading>
       <p>
         Many teams turned to Microsoft Azure and Cognitive Services for their infrastructure
         and AI capabilities. Azure&apos;s robust cloud-based platform offered the
@@ -83,7 +83,7 @@ const Page = () => {
         with its suite of pre-built AI tools, provided essential resources for natural
         language processing and more.
       </p>
-      <i>The Elements of Success</i>
+      <Heading level={4}>The Elements of Success</Heading>
       <p>
         The hackathon&apos;s judges evaluated entries based on a comprehensive set of
         criteria. Here&apos;s a closer look at the key elements that defined the winning
@@ -128,18 +128,24 @@ const Page = () => {
         </li>
       </ul>
       <div className={styles.imageWrapper}></div>
-      <i>The Winners</i>
+      <Heading level={4}>The Winners</Heading>
       <p>
         Among 140 teams from CIS countries, 32 teams sorted on the base of requirements.
-        Winners are teams from Uzbekistan “Dots” and “Bruh Tech”, from Kazakhstan “Balmuzdaq
-        Studio”. The winning teams showcased remarkable creativity and technical expertise.
-        Their solutions stood out for their innovative use of Microsoft technologies,
-        seamless integration and commitment to ethical AI practices. The hackathon not only
+      </p>
+      <ul>
+        <li>1. Dots 🥇</li>
+        <li>2. Bruh Tech 🥈</li>
+        <li>3. Balmuzdaq 🥉</li>
+      </ul>
+      <p>
+        The winning teams showcased remarkable creativity and technical expertise. Their
+        solutions stood out for their innovative use of Microsoft technologies, seamless
+        integration and commitment to ethical AI practices. The hackathon not only
         demonstrated the potential of AI in education but also highlighted the importance of
         collaboration and diversity in tech.
       </p>
       <div className={styles.imageWrapper}></div>
-      <i>Looking Ahead</i>
+      <Heading level={4}>Looking Ahead</Heading>
       <p>
         As AI continues to evolve, hackathons like this one are crucial for exploring new
         possibilities and fostering innovation. The Sharpist Hackathon serves as a testament
